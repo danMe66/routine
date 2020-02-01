@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+我是 swoole 发起的 websocket 页面
+<script>
+    var wsUrl = "ws://127.0.0.1:8812";
+    var webSocket = new WebSocket(wsUrl);
+
+    //实例对象的 onopen 属性
+    webSocket.onopen = function (evt) {
+        webSocket.send("这是 websocket 连接成功发送的数据");
+        console.log("connection 连接成功！");
+    }
+
+    //实例化 onmessage
+    webSocket.onmessage = function (evt) {
+        console.log('这是 websocket 返回的数据：' + evt.data);
+    }
+
+    //onclose
+    webSocket.close = function (evt) {
+        console.log("连接已关闭！");
+    }
+
+    //onerror
+    webSocket.onerror = function (evt, e) {
+        console.log("error:" + evt.data)
+    }
+</script>
+</body>
+</html>
