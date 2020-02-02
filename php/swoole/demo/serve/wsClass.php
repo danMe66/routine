@@ -37,6 +37,7 @@ class wsClass
     public function onOpen($ws, $request)
     {
         var_dump($request->fd);
+        echo "fd为：$request->fd \n";
         if ($request->fd == 1) {
             //间隔时钟定时器
             swoole_timer_tick(2000, function ($timer_id) {

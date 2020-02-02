@@ -26,7 +26,7 @@ $serv->on('connect', function ($serv, $fd, $reactor_id) {
  * $reactor_id 线程ID
  */
 $serv->on('receive', function ($serv, $fd, $reactor_id, $data) {
-    $serv->send($fd, "接收数据：{$reactor_id} - {$fd}---" . $data);
+    $serv->send($fd, "接收数据：{$reactor_id} - {$fd}\n" . $data);
 });
 
 /**
