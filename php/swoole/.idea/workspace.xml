@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="917f4876-3b5d-4fce-8f31-3795788a9fc6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/demo/swoole4.x/coroutine/http_client.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/swoole4.x/coroutine/http_client_2.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/swoole4.x/coroutine/http_server.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/swoole4.x/coroutine/http_server_2.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/swoole4.x/coroutine/redis.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/swoole4.x/coroutine/redis_runtime.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/swoole4.x/coroutine/redis_runtime_2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/swoole4.x/coroutine/chan.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/swoole4.x/coroutine/file.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/swoole4.x/coroutine/setTxt.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ws.html" beforeDir="false" afterPath="$PROJECT_DIR$/data/ws.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +87,7 @@
       <workItem from="1578653477054" duration="31000" />
       <workItem from="1578890138440" duration="657000" />
       <workItem from="1580563450423" duration="4274000" />
-      <workItem from="1580621485560" duration="12944000" />
+      <workItem from="1580621485560" duration="14410000" />
     </task>
     <servers />
   </component>
@@ -100,10 +95,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2268" y="378" key="NewPhpFileDialog" timestamp="1580724883012">
+    <state x="2268" y="378" key="NewPhpFileDialog" timestamp="1580740774419">
       <screen x="1440" y="-110" width="1920" height="1080" />
     </state>
-    <state x="2268" y="378" key="NewPhpFileDialog/0.0.1440.900/1440.-110.1920.1080@1440.-110.1920.1080" timestamp="1580724883012" />
+    <state x="2268" y="378" key="NewPhpFileDialog/0.0.1440.900/1440.-110.1920.1080@1440.-110.1920.1080" timestamp="1580740774419" />
     <state x="2544" y="110" key="NewPhpFileDialog/0.0.1440.900/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1578481889799" />
     <state x="1850" y="159" key="SettingsEditor" timestamp="1580623862748">
       <screen x="1440" y="-110" width="1920" height="1080" />
