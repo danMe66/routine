@@ -8,7 +8,9 @@ go(function () {
     $redis = new Redis();
     $redis->connect("127.0.0.1", 6379);
 
-    $value = $redis->get("demo");
+    $key = "demo1212";
+    $value = $redis->set($key, 999999);
+    $value = $redis->get($key);
     print_r($value);
     echo PHP_EOL;
     echo "1-go-end" . PHP_EOL;

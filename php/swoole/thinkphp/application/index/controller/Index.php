@@ -2,21 +2,31 @@
 
 namespace app\index\controller;
 
+use app\common\lib\Sms;
+
 class Index
 {
     public function index()
     {
-        print_r($_GET);
-        echo "swoole-tp-demo";
+        return 'index';
     }
 
-    public function test()
+    public function singwa()
     {
-        echo "this is test function!!!";
+        echo time();
     }
 
     public function hello($name = 'ThinkPHP5')
     {
-        return 'hello,' . $name;
+        echo 'hello' . $name . time();
     }
+
+    public function send()
+    {
+        $sms = new Sms();
+        $res = $sms::sendSms();
+        header("Content-type=text/html;charset=utf-8");
+        echo $res;
+    }
+
 }

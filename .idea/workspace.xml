@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38890ed4-e6b2-446b-99aa-a7cc3db9ae93" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodejs/imooc_node/Nodejs全栈入门" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/imooc_designPattern/大话PHP设计模式" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/swoole/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/php/swoole/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,7 +18,7 @@
     </execution>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/php/swoole-yaf" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1XDIieSY1KlFEgjJromUomASww8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -29,6 +31,27 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager">
+    <configuration name="dingding.sh" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/ssh/dingding.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/ssh" />
+      <option name="INTERPRETER_PATH" value="/bin/zsh" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Shell Script.dingding.sh" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -53,10 +76,17 @@
       <option name="presentableId" value="Default" />
       <updated>1580621468772</updated>
       <workItem from="1580621485330" duration="72000" />
+      <workItem from="1580807840608" duration="1968000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2124" y="240" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580809082823">
+      <screen x="1440" y="-110" width="1920" height="1080" />
+    </state>
+    <state x="2124" y="240" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/1440.-110.1920.1080@1440.-110.1920.1080" timestamp="1580809082823" />
   </component>
 </project>
