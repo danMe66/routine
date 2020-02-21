@@ -1,18 +1,22 @@
 <?php
 
-namespace app\common\lib;
+namespace app\common\lib\send\Impl;
 
+use app\common\lib\send\ISendSms;
 use Yunpian\Sdk\YunpianClient;
 
 ini_set("display_errors", "on");
 
 require_once APP_PATH . '/../extend/yunpian-php-sdk/vendor/autoload.php';
 
-class Sms
+class YunPian implements ISendSms
 {
     static $API_KEY = '6c85e785699ed73a7ab135f7bf27c85b';
 
-    public static function sendSms($phone_num, $code)
+    /**
+     * @inheritDoc
+     */
+    function sendCode($phone_num, $code)
     {
         //初始化client,apikey作为所有请求的默认值
         $client = YunpianClient::create(static::$API_KEY);
