@@ -2,17 +2,7 @@
 
 namespace app\common\base;
 
-
-/**
- * Created by PhpStorm.
- * User: admin
- * Date: 2017/4/7
- * Time: 13:51
- */
-
-namespace container\strongType;
-
-use container\exception\UnexpectedValueException;
+use app\common\base\exception\UnexpectedValueException;
 
 /**
  * 自定义枚举的实现，枚举支持数字或是纯字符串，其他的定义应该报异常.严格区分大小写

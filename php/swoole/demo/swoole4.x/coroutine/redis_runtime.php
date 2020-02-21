@@ -5,6 +5,6 @@ go(function () {
     $redis = new Redis();
     $redis->connect("127.0.0.1", 6379);
 
-    $value = $redis->get("demo");
+    $value = $redis->get("demoMonth");
     print_r($value);
 });

@@ -1,14 +1,16 @@
 <?php
 
-namespace app\common\lib\send;
+namespace app\common\lib\send\base;
+
 /**
- * 验证码推送服务
- * Class Sms
- * @package app\common\lib
+ * 钉钉机器人
+ * Class DingTalk
+ * @package app\common\lib\send\base
+ * @link 钉钉文档：https://ding-doc.dingtalk.com/doc#/serverapi2/qf2nxq
  */
 class DingTalk
 {
-    static $WEB_HOOK = "https://oapi.dingtalk.com/robot/send?access_token=xxxxxx";
+    static $WEB_HOOK = "https://oapi.dingtalk.com/robot/send?access_token=5a09891883d0c2c431b75a8d3a8667900868373323bd18014a6031361e8ca7f1";
 
     /**
      * 发送钉钉消息

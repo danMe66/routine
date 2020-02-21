@@ -2,12 +2,16 @@
 
 namespace app\index\controller;
 
+use app\common\lib\send\SendSmsFactory;
 use app\common\lib\Sms;
 use app\common\lib\Util;
 use app\common\lib\Redis;
 
 class Send
 {
+    const smsProvider = 'DingTalk';
+//    const smsProvider = 'YunPian';
+
     public function index()
     {
         $phone_num = request()->get('phone_num', 0, 'intval');
@@ -17,12 +21,12 @@ class Send
 
         //生成随机数
         $code = rand(1000, 9999);
-//        try {
-//            $res = Sms::sendSms($phone_num, $code);
-//        } catch (\Exception $e) {
-//            return Util::show(config('code.error'), '短信服务商内部系统异常!!!');
-//        }
-        $res = true;
+        try {
+            $sendSms = SendSmsFactory::GetInstanceByName(self::smsProvider);
+            $res = $sendSms->sendCode($phone_num, $code);
+        } catch (\Exception $e) {
+            return Util::show(config('code.error'), '短信API异常!!!', $e->getMessage());
+        }
         if ($res) {
             $redis = new \Swoole\Coroutine\Redis();
             $redis->connect(config('redis.host'), config('redis.port'));

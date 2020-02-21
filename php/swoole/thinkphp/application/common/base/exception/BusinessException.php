@@ -1,12 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: jack
- * Date: 17-6-23
- * Time: 下午2:21
- */
 
-namespace container\exception;
+namespace app\common\base\exception;
 
 /**
  * 业务类的错误
@@ -20,7 +14,7 @@ class BusinessException extends BaseException
      * @param array $messageArray [errorMessage,errorCode]
      * @param string $information
      */
-    function __construct(array $messageArray, $information='')
+    function __construct(array $messageArray, $information = '')
     {
         $message = $messageArray[0];
         $code = $messageArray[1];

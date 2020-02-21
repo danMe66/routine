@@ -9,7 +9,7 @@ ini_set("display_errors", "on");
 
 require_once APP_PATH . '/../extend/yunpian-php-sdk/vendor/autoload.php';
 
-class YunPian implements ISendSms
+class YunPianImpl implements ISendSms
 {
     static $API_KEY = '6c85e785699ed73a7ab135f7bf27c85b';
 
@@ -24,6 +24,14 @@ class YunPian implements ISendSms
             YunpianClient::MOBILE => $phone_num,
             YunpianClient::TEXT => '【PHP基础网】您的验证码是' . $code . '。如非本人操作，请忽略本短信。'
         ];
-        return $client->sms()->single_send($param);
+        $res = $client->sms()->single_send($param);
+        if ($res->isSucc()) {
+            return [
+                "errcode" => 0,
+                "errmsg" => $res->data(),
+            ];
+        } else {
+            return false;
+        }
     }
 }

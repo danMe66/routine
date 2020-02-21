@@ -2,13 +2,14 @@
 
 namespace app\index\controller;
 
-use app\common\lib\Sms;
+use app\common\lib\send\Sms;
 
 class Index
 {
     public function index()
     {
-        return 'index';
+        $a = 12;
+        return $a;
     }
 
     public function singwa()

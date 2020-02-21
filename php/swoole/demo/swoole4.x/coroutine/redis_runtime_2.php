@@ -16,7 +16,7 @@ go(function () {
     echo "1-go-end" . PHP_EOL;
 });
 
-echo "demo swoole" . PHP_EOL;
+echo "demoMonth swoole" . PHP_EOL;
 
 go(function () {
     echo "2-go-start" . PHP_EOL;

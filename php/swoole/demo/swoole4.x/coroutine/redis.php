@@ -6,7 +6,7 @@ go(function () {
         'timeout' => 3,
     ]);
     $redis->connect("127.0.0.1", 6379);
-    $key = "demo";
+    $key = "demoMonth";
     $value = $redis->set($key,222);
     $value = $redis->get($key);
     var_dump($value);

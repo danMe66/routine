@@ -11,7 +11,7 @@ $table->create();
 //新增内容
 $table->set('demoTable', [
     'id' => 1,
-    'name' => 'demo',
+    'name' => 'demoMonth',
     'age' => 30,
 ]);
 //另外一种方案

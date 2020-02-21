@@ -1,12 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: admin
- * Date: 2017/4/7
- * Time: 13:58
- */
 
-namespace container\exception;
+namespace app\common\base\exception;
 
 /**
  * 业务类异常建议 BusinessException
@@ -27,7 +21,7 @@ class BaseException extends \Exception
      * @param int|string $code 错误编号
      * @param string $information 调试信息
      */
-    function __construct($message, $code=0, $information = '')
+    function __construct($message, $code = 0, $information = '')
     {
 
         if (is_array($message) && empty($information)) {
