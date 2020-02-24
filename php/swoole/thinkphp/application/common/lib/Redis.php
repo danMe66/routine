@@ -4,10 +4,16 @@ namespace app\common\lib;
 
 class Redis
 {
-    public static $pre = 'sms_';
+    public static $sms_pre = 'sms_';
+    public static $user_pre = 'user_';
 
     public static function smsKey($phoneNum)
     {
-        return self::$pre . $phoneNum;
+        return self::$sms_pre . $phoneNum;
+    }
+
+    public static function userKey($phoneNum)
+    {
+        return self::$user_pre . $phoneNum;
     }
 }

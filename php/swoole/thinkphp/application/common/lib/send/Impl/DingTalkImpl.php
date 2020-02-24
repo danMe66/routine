@@ -8,11 +8,10 @@ use app\common\lib\send\base\DingTalk;
 
 class DingTalkImpl implements ISendSms
 {
-
-    static $WEB_HOOK = "https://oapi.dingtalk.com/robot/send?access_token=xxxxxx";
-
     /**
-     * @inheritDoc
+     * @param $phone_num
+     * @param $code
+     * @return bool|false|mixed|string
      */
     function sendCode($phone_num, $code)
     {

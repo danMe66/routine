@@ -2,33 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="917f4876-3b5d-4fce-8f31-3795788a9fc6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/live.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thinkphp/application/common/lib/task/Task.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thinkphp/config/sms.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/memory/table.php" beforeDir="false" afterPath="$PROJECT_DIR$/demo/memory/table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/swoole4.x/coroutine/redis.php" beforeDir="false" afterPath="$PROJECT_DIR$/demo/swoole4.x/coroutine/redis.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/swoole4.x/coroutine/redis_runtime.php" beforeDir="false" afterPath="$PROJECT_DIR$/demo/swoole4.x/coroutine/redis_runtime.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/swoole4.x/coroutine/redis_runtime_2.php" beforeDir="false" afterPath="$PROJECT_DIR$/demo/swoole4.x/coroutine/redis_runtime_2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/test/Test.php" beforeDir="false" afterPath="$PROJECT_DIR$/demo/test/Test.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/test/server.php" beforeDir="false" afterPath="$PROJECT_DIR$/demo/test/server.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/application/common/base/BaseEnum.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/application/common/base/BaseEnum.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/application/common/base/exception/BaseException.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/application/common/base/exception/BaseException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/application/common/base/exception/BusinessException.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/application/common/base/exception/BusinessException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/application/common/base/exception/CriticalException.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/application/common/base/exception/CriticalException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/application/common/base/exception/UnexpectedValueException.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/application/common/base/exception/UnexpectedValueException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/application/common/base/php-enum" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/application/common/lib/redis/Predis.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/application/common/lib/redis/Predis.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/application/common/lib/send/ISendSms.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/application/common/lib/send/ISendSms.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/application/common/lib/Redis.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/application/common/lib/Redis.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/thinkphp/application/common/lib/send/Impl/DingTalkImpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/application/common/lib/send/Impl/DingTalkImpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/application/common/lib/send/Impl/YunPianImpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/application/common/lib/send/Impl/YunPianImpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/application/common/lib/send/SendSmsFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/application/common/lib/send/SendSmsFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/application/common/lib/send/base/DingTalk.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/application/common/lib/send/base/DingTalk.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/application/common/lib/send/base/Sms.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/application/common/lib/send/base/Sms.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/application/common/lib/send/enum/SmsProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/application/common/lib/send/enum/SmsProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/thinkphp/application/index/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/application/index/controller/Index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/thinkphp/application/index/controller/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/application/index/controller/Login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/thinkphp/application/index/controller/Send.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/application/index/controller/Send.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/build.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/build.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/config/redis.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/config/redis.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/server/http.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/server/http.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,29 +53,29 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/thinkphp/application/common/base" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/thinkphp/application/common/base" />
-      <recent name="$PROJECT_DIR$/thinkphp/application/common/lib/send/enum" />
-      <recent name="$PROJECT_DIR$/thinkphp/application/common/lib/send" />
-      <recent name="$PROJECT_DIR$/thinkphp/application/index/controller" />
-      <recent name="$PROJECT_DIR$/thinkphp/config" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/thinkphp/application/common/lib/send/enum/demo" />
       <recent name="$PROJECT_DIR$/thinkphp/application/common/lib/send" />
       <recent name="$PROJECT_DIR$/thinkphp/application/common/lib/send/base" />
       <recent name="$PROJECT_DIR$/thinkphp/application/common/lib/send/interface" />
       <recent name="$PROJECT_DIR$/thinkphp/application/common/lib/Send" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/thinkphp/config" />
+      <recent name="$PROJECT_DIR$/thinkphp/application/common/lib/task" />
+      <recent name="$PROJECT_DIR$/thinkphp/application/common/base" />
+      <recent name="$PROJECT_DIR$/thinkphp/application/common/lib/send/enum" />
     </key>
   </component>
   <component name="RunManager" selected="PHPUnit.EnumTest.testGetValue">
@@ -119,9 +102,9 @@
       <item itemvalue="JavaScript Debug.redis.php" />
       <item itemvalue="JavaScript Debug.redis_runtime.php" />
       <item itemvalue="JavaScript Debug.redis_runtime_2.php" />
+      <item itemvalue="PHP Script.Enum.php" />
       <item itemvalue="PHP Web Page.127.0.0.1:8811" />
       <item itemvalue="PHPUnit.EnumTest.testGetValue" />
-      <item itemvalue="PHP Script.Enum.php" />
     </list>
     <recent_temporary>
       <list>
@@ -172,7 +155,8 @@
       <workItem from="1581898945311" duration="415000" />
       <workItem from="1582104293192" duration="118000" />
       <workItem from="1582104462159" duration="1323000" />
-      <workItem from="1582186966598" duration="11860000" />
+      <workItem from="1582186966598" duration="12134000" />
+      <workItem from="1582457771451" duration="8184000" />
     </task>
     <servers />
   </component>
@@ -207,17 +191,19 @@
     </state>
     <state x="-1324" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1581582264342" />
     <state x="2036" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582271469682" />
-    <state x="2138" y="302" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1582255079243">
+    <state x="2138" y="302" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1582539265797">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state x="-1222" y="302" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1581583139916" />
     <state x="2138" y="192" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900/1440.-110.1920.1080@1440.-110.1920.1080" timestamp="1580802474480" />
-    <state x="2138" y="302" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582255079243" />
-    <state x="-1728" y="95" width="1152" height="720" key="DiffContextDialog" timestamp="1581601211538">
-      <screen x="-1920" y="0" width="1920" height="1028" />
+    <state x="2138" y="302" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582539265797" />
+    <state x="1632" y="105" width="1629" height="796" key="DiffContextDialog" timestamp="1582539566364">
+      <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state x="-1728" y="95" width="1152" height="720" key="DiffContextDialog/0.0.1440.900/-1920.0.1920.1028@-1920.0.1920.1028" timestamp="1581601211538" />
     <state x="144" y="79" key="DiffContextDialog/0.0.1440.900/1440.-110.1920.1080@0.0.1440.900" timestamp="1580889244024" />
+    <state x="1632" y="100" width="1152" height="757" key="DiffContextDialog/0.0.1440.900/1440.0.1920.1028@1440.0.1920.1028" timestamp="1582538301816" />
+    <state x="1632" y="105" width="1629" height="796" key="DiffContextDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582539566364" />
     <state width="1878" height="268" key="GridCell.Tab.0.bottom" timestamp="1581664007889">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
@@ -266,11 +252,12 @@
     </state>
     <state width="1878" height="366" key="GridCell.Tab.1.right/0.0.1440.848/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1581664007029" />
     <state width="1878" height="366" key="GridCell.Tab.1.right/0.0.1440.900/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1581571269711" />
-    <state x="-1320" y="363" key="NewPhpClassDialog" timestamp="1581571222809">
-      <screen x="-1920" y="0" width="1920" height="1080" />
+    <state x="2040" y="363" key="NewPhpClassDialog" timestamp="1582537691766">
+      <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state x="-1320" y="363" key="NewPhpClassDialog/0.0.1440.900/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1581571222809" />
     <state x="2040" y="253" key="NewPhpClassDialog/0.0.1440.900/1440.-110.1920.1080@1440.-110.1920.1080" timestamp="1580835172807" />
+    <state x="2040" y="363" key="NewPhpClassDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582537691766" />
     <state x="2268" y="488" key="NewPhpFileDialog" timestamp="1582192511393">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
@@ -283,19 +270,19 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="532" y="168" key="RollbackChangesDialog/0.0.1440.900/1440.-110.1920.1080@0.0.1440.900" timestamp="1580889245094" />
-    <state x="1851" y="214" key="SettingsEditor" timestamp="1582104420666">
+    <state x="1851" y="214" key="SettingsEditor" timestamp="1582538014970">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state x="1986" y="-181" key="SettingsEditor/0.0.1440.900/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1578392370150" />
-    <state x="1851" y="214" key="SettingsEditor/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582104420666" />
+    <state x="1851" y="214" key="SettingsEditor/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582538014970" />
     <state x="308" y="178" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1580887389660" />
     <state x="1850" y="159" key="SettingsEditor/0.23.1440.877/1440.-110.1920.1080@1440.-110.1920.1080" timestamp="1580623862748" />
-    <state x="2080" y="297" width="639" height="486" key="find.popup" timestamp="1582255183527">
+    <state x="2080" y="297" width="639" height="486" key="find.popup" timestamp="1582537025812">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state x="-1280" y="297" width="639" height="486" key="find.popup/0.0.1440.900/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1581519033498" />
     <state x="2080" y="187" width="639" height="486" key="find.popup/0.0.1440.900/1440.-110.1920.1080@1440.-110.1920.1080" timestamp="1580835517076" />
-    <state x="2080" y="297" width="639" height="486" key="find.popup/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582255183527" />
+    <state x="2080" y="297" width="639" height="486" key="find.popup/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582537025812" />
     <state x="1873" y="200" key="run.anything.popup" timestamp="1580724286237">
       <screen x="1440" y="-110" width="1920" height="1080" />
     </state>

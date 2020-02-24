@@ -8,8 +8,8 @@ class Index
 {
     public function index()
     {
-        $a = 12;
-        return $a;
+//        print_r($_GET);
+//        echo "Hello";
     }
 
     public function singwa()
