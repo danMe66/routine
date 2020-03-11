@@ -3,28 +3,30 @@
 use app\common\lib\send\SendSmsFactory;
 use app\common\lib\Util;
 
-class Http
+class Ws
 {
     const HOST = "0.0.0.0";
     const PORT = 8811;
-    public $http = null;
+    public $ws = null;
 
     public function __construct()
     {
-        $this->http = new Swoole_http_server(self::HOST, self::PORT);
+        $this->ws = new swoole_websocket_server(self::HOST, self::PORT);
 
-        $this->http->set([
+        $this->ws->set([
             'enable_static_handler' => true,
             'document_root' => "/Users/liudandan/myFiles/www/learing/php/swoole/thinkphp/public/static",
             'worker_num' => 4,
             'task_worker_num' => 4
         ]);
-        $this->http->on('workerstart', [$this, "onWorkerStart"]);
-        $this->http->on('request', [$this, "onRequest"]);
-        $this->http->on('task', [$this, "onTask"]);
-        $this->http->on('finish', [$this, "onFinish"]);
-        $this->http->on('close', [$this, "onClose"]);
-        $this->http->start();
+        $this->ws->on('open', [$this, "onOpen"]);
+        $this->ws->on('message', [$this, "onMessage"]);
+        $this->ws->on('workerstart', [$this, "onWorkerStart"]);
+        $this->ws->on('request', [$this, "onRequest"]);
+        $this->ws->on('task', [$this, "onTask"]);
+        $this->ws->on('finish', [$this, "onFinish"]);
+        $this->ws->on('close', [$this, "onClose"]);
+        $this->ws->start();
     }
 
     public function onWorkerStart($server, $worker_id)
@@ -59,6 +61,14 @@ class Http
                 $_GET[$k] = $v;
             }
         }
+
+        $_FILES = [];
+        if (isset($request->files)) {
+            foreach ($request->files as $k => $v) {
+                $_FILES[$k] = $v;
+            }
+        }
+
         $_POST = [];
         if (isset($request->post)) {
             foreach ($request->post as $k => $v) {
@@ -66,7 +76,7 @@ class Http
             }
         }
 
-        $_POST['http_serve'] = $this->http;
+        $_POST['http_server'] = $this->ws;
         ob_start();
         // 执行应用并响应
         try {
@@ -107,10 +117,35 @@ class Http
         echo "finish successful:{$data}\n";
     }
 
+    /**
+     * 监听 websocket 连接事件
+     * @param $ws
+     * @param $request
+     */
+    public function onOpen($ws, $request)
+    {
+        //将 fd 存入 redis 有序集合
+        \app\common\lib\redis\Predis::getInstance()->sAdd(config('redis.live_game_key'), $request->fd);
+        var_dump($request->fd);
+    }
+
+    /**
+     * 监听 ws 消息事件
+     * @param $ws
+     * @param $frame
+     */
+    public function onMessage($ws, $frame)
+    {
+        echo "服务器接收到消息：{$frame->data}\n";
+        $ws->push($frame->fd, "发送给客户端的消息：" . date("Y-m-d H:i:s"));
+    }
+
     public function onClose($ws, $fd)
     {
+        //将 fd 从 redis 有序集合中删除
+        \app\common\lib\redis\Predis::getInstance()->sRem(config('redis.live_game_key'), $fd);
         echo "连接关闭：{$fd}\n";
     }
 }
 
-new Http();
+new Ws();

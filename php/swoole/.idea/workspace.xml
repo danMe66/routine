@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="917f4876-3b5d-4fce-8f31-3795788a9fc6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/live.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/application/common/lib/task/Task.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/config/sms.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thinkphp/application/admin/controller/Image.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thinkphp/application/admin/controller/Live.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thinkphp/config/live.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thinkphp/server/ws.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/application/common/lib/Redis.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/application/common/lib/Redis.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/application/common/lib/send/Impl/DingTalkImpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/application/common/lib/send/Impl/DingTalkImpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/application/common/lib/redis/Predis.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/application/common/lib/redis/Predis.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/thinkphp/application/index/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/application/index/controller/Index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/application/index/controller/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/application/index/controller/Login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/application/index/controller/Send.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/application/index/controller/Send.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/config/redis.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/config/redis.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/server/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/thinkphp/server/http.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/server/http.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/thinkphp/library/think/File.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/thinkphp/library/think/File.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,14 +54,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/thinkphp/application/admin/controller" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -71,11 +72,11 @@
       <recent name="$PROJECT_DIR$/thinkphp/application/common/lib/Send" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/thinkphp/application/admin/controller" />
       <recent name="$PROJECT_DIR$/thinkphp/config" />
-      <recent name="$PROJECT_DIR$/thinkphp/application/common/lib/task" />
-      <recent name="$PROJECT_DIR$/thinkphp/application/common/base" />
-      <recent name="$PROJECT_DIR$/thinkphp/application/common/lib/send/enum" />
+      <recent name="$PROJECT_DIR$/thinkphp/application" />
+      <recent name="$PROJECT_DIR$/thinkphp/public/static" />
+      <recent name="$PROJECT_DIR$/thinkphp/server" />
     </key>
   </component>
   <component name="RunManager" selected="PHPUnit.EnumTest.testGetValue">
@@ -156,7 +157,16 @@
       <workItem from="1582104293192" duration="118000" />
       <workItem from="1582104462159" duration="1323000" />
       <workItem from="1582186966598" duration="12134000" />
-      <workItem from="1582457771451" duration="8184000" />
+      <workItem from="1582457771451" duration="8279000" />
+      <workItem from="1583064696360" duration="928000" />
+      <workItem from="1583123960622" duration="4416000" />
+      <workItem from="1583135117412" duration="34000" />
+      <workItem from="1583382637527" duration="3368000" />
+      <workItem from="1583408762838" duration="11000" />
+      <workItem from="1583409222993" duration="3071000" />
+      <workItem from="1583468613630" duration="4246000" />
+      <workItem from="1583545988521" duration="65000" />
+      <workItem from="1583546094952" duration="52000" />
     </task>
     <servers />
   </component>
@@ -186,10 +196,11 @@
     </state>
     <state x="-1496" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1581571265241" />
     <state x="1864" y="92" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900/1440.-110.1920.1080@1440.-110.1920.1080" timestamp="1580828831459" />
-    <state x="2036" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1582271469682">
-      <screen x="1440" y="0" width="1920" height="1080" />
+    <state x="2235" y="-540" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583126200540">
+      <screen x="1440" y="-540" width="2560" height="1440" />
     </state>
     <state x="-1324" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1581582264342" />
+    <state x="2235" y="-540" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1583126200540" />
     <state x="2036" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582271469682" />
     <state x="2138" y="302" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1582539265797">
       <screen x="1440" y="0" width="1920" height="1080" />
@@ -270,28 +281,29 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="532" y="168" key="RollbackChangesDialog/0.0.1440.900/1440.-110.1920.1080@0.0.1440.900" timestamp="1580889245094" />
-    <state x="1851" y="214" key="SettingsEditor" timestamp="1582538014970">
-      <screen x="1440" y="0" width="1920" height="1080" />
+    <state x="1986" y="-181" key="SettingsEditor" timestamp="1583546054329">
+      <screen x="1440" y="-540" width="2560" height="1440" />
     </state>
-    <state x="1986" y="-181" key="SettingsEditor/0.0.1440.900/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1578392370150" />
+    <state x="1986" y="-181" key="SettingsEditor/0.0.1440.900/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1583546054329" />
     <state x="1851" y="214" key="SettingsEditor/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582538014970" />
     <state x="308" y="178" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1580887389660" />
     <state x="1850" y="159" key="SettingsEditor/0.23.1440.877/1440.-110.1920.1080@1440.-110.1920.1080" timestamp="1580623862748" />
-    <state x="2080" y="297" width="639" height="486" key="find.popup" timestamp="1582537025812">
-      <screen x="1440" y="0" width="1920" height="1080" />
+    <state x="2293" y="-144" width="852" height="648" key="find.popup" timestamp="1583127522699">
+      <screen x="1440" y="-540" width="2560" height="1440" />
     </state>
     <state x="-1280" y="297" width="639" height="486" key="find.popup/0.0.1440.900/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1581519033498" />
     <state x="2080" y="187" width="639" height="486" key="find.popup/0.0.1440.900/1440.-110.1920.1080@1440.-110.1920.1080" timestamp="1580835517076" />
+    <state x="2293" y="-144" width="852" height="648" key="find.popup/0.0.1440.900/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1583127522699" />
     <state x="2080" y="297" width="639" height="486" key="find.popup/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582537025812" />
     <state x="1873" y="200" key="run.anything.popup" timestamp="1580724286237">
       <screen x="1440" y="-110" width="1920" height="1080" />
     </state>
     <state x="1873" y="200" key="run.anything.popup/0.0.1440.900/1440.-110.1920.1080@1440.-110.1920.1080" timestamp="1580724286237" />
-    <state x="1967" y="248" width="670" height="158" key="search.everywhere.popup" timestamp="1582274146796">
-      <screen x="1440" y="0" width="1920" height="1080" />
+    <state x="2142" y="-209" width="670" height="676" key="search.everywhere.popup" timestamp="1583131294373">
+      <screen x="1440" y="-540" width="2560" height="1440" />
     </state>
     <state x="1967" y="138" width="670" height="58" key="search.everywhere.popup/0.0.1440.900/1440.-110.1920.1080@1440.-110.1920.1080" timestamp="1580833460126" />
-    <state x="2142" y="-209" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1578392711089" />
+    <state x="2142" y="-209" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1583131294373" />
     <state x="1967" y="248" width="670" height="158" key="search.everywhere.popup/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582274146796" />
   </component>
   <component name="XDebuggerManager">

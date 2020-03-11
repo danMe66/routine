@@ -39,7 +39,8 @@ class File extends SplFileObject
     {
         parent::__construct($filename, $mode);
 
-        $this->filename = $this->getRealPath() ?: $this->getPathname();
+//        $this->filename = $this->getRealPath() ?: $this->getPathname();
+        $this->filename = $filename;
     }
 
     /**
