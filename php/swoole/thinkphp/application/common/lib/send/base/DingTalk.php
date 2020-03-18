@@ -10,7 +10,7 @@ namespace app\common\lib\send\base;
  */
 class DingTalk
 {
-    static $WEB_HOOK = "https://oapi.dingtalk.com/robot/send?access_token=5a09891883d0c2c431b75a8d3a8667900868373323bd18014a6031361e8ca7f1";
+    static $WEB_HOOK = "https://oapi.dingtalk.com/robot/send?access_token=7c427636b7f8b84629f29fa6559b64586425fd8befbf192d9ea4bd0fd7f77320";
 
     /**
      * 发送钉钉消息

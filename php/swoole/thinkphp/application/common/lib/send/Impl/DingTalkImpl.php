@@ -15,7 +15,7 @@ class DingTalkImpl implements ISendSms
      */
     function sendCode($phone_num, $code)
     {
-        $message = "通知消息:您手机号码 $phone_num 的验证码是: $code " . ",如非本人操作，请忽略本短信。";
+        $message = "消息通知:您手机号码 $phone_num 的验证码是: $code " . ",如非本人操作，请忽略本短信。";
         $data = [
             'msgtype' => 'text',
             'text' => array('content' => $message)

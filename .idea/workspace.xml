@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="38890ed4-e6b2-446b-99aa-a7cc3db9ae93" name="Default Changelist" comment=".gitignore">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="38890ed4-e6b2-446b-99aa-a7cc3db9ae93" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,7 +82,7 @@
       <updated>1580621468772</updated>
       <workItem from="1580621485330" duration="72000" />
       <workItem from="1580807840608" duration="1968000" />
-      <workItem from="1583891949606" duration="1449000" />
+      <workItem from="1583891949606" duration="1628000" />
     </task>
     <task id="LOCAL-00001" summary="swoole 后台发送 socket">
       <created>1583892010671</created>
@@ -94,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583892010671</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary=".gitignore">
+      <created>1583896358842</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583896358845</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,17 +109,18 @@
       <path value="$PROJECT_DIR$/php/swoole-yaf" />
     </ignored-roots>
     <MESSAGE value="swoole 后台发送 socket" />
-    <option name="LAST_COMMIT_MESSAGE" value="swoole 后台发送 socket" />
+    <MESSAGE value=".gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value=".gitignore" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2124" y="240" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580809082823">
       <screen x="1440" y="-110" width="1920" height="1080" />
     </state>
     <state x="2124" y="240" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/1440.-110.1920.1080@1440.-110.1920.1080" timestamp="1580809082823" />
-    <state x="2331" y="-224" key="CommitChangelistDialog2" timestamp="1583896267067">
+    <state x="2331" y="-224" key="CommitChangelistDialog2" timestamp="1583896358372">
       <screen x="1440" y="-540" width="2560" height="1440" />
     </state>
-    <state x="2331" y="-224" key="CommitChangelistDialog2/0.0.1440.900/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1583896267067" />
+    <state x="2331" y="-224" key="CommitChangelistDialog2/0.0.1440.900/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1583896358372" />
     <state x="2144" y="-191" key="DiffContextDialog" timestamp="1583896231992">
       <screen x="1440" y="-540" width="2560" height="1440" />
     </state>
@@ -124,9 +129,9 @@
       <screen x="1440" y="-540" width="2560" height="1440" />
     </state>
     <state x="2229" y="-181" key="SettingsEditor/0.0.1440.900/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1583896209767" />
-    <state x="2320" y="-80" key="Vcs.Push.Dialog.v2" timestamp="1583896345352">
+    <state x="2320" y="-80" key="Vcs.Push.Dialog.v2" timestamp="1583896360659">
       <screen x="1440" y="-540" width="2560" height="1440" />
     </state>
-    <state x="2320" y="-80" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1583896345352" />
+    <state x="2320" y="-80" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1583896360659" />
   </component>
 </project>

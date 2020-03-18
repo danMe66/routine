@@ -60,28 +60,6 @@ class Predis
     }
 
     /**
-     * 添加有序集合
-     * @param $key
-     * @param $value
-     * @return mixed
-     */
-    public function sAdd($key, $value)
-    {
-        return $this->redis->sAdd($key, $value);
-    }
-
-    /**
-     * 添加有序集合
-     * @param $key
-     * @param $value
-     * @return int
-     */
-    public function sRem($key, $value)
-    {
-        return $this->redis->sRem($key, $value);
-    }
-
-    /**
      * 集合总数
      * @param $key
      * @param $value

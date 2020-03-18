@@ -16,7 +16,6 @@ class SendSmsFactory
      */
     public static function GetInstance($provider)
     {
-        var_dump($provider);
         switch ($provider) {
             case SmsProvider::YunPian:
                 return new YunPianImpl();
