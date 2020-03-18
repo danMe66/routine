@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>layui在线调试</title>
+    <link rel="stylesheet" type="text/css" href="https://www.layuicdn.com/layui/css/layui.css" />
+</head>
+
+<body>
+    <div class="layui-inline">
+        <label class="layui-form-label">商品类别</label>
+        <div class="layui-input-inline">
+            <select name="interest" lay-filter="one_cate">
+                <option value="">请选择</option>
+                {volist name="list" id="vo"}
+                <option value="{$vo.cate_id}">{$vo.cate_name}</option>
+                {/volist}
+            </select>
+        </div>
+        <div class="layui-input-inline">
+            <select name="interest" lay-filter="aihao" id="two_cate">
+            </select>
+        </div>
+    </div>
+</body>
+<script src="https://www.layuicdn.com/layui/layui.js"></script>
+<script>
+    form.on('select(one_cate)', function (data) {
+        //data.value 得到被选中的值
+        var url = '/admin/category/selec/' + data.value;
+        $.get(url, function (data) {
+            $("#two_cate").empty();
+            $("#two_cate").append(new Option("请选择分类", ""));
+            $.each(data, function (index, item) {
+                $("#two_cate").append(new Option(item, index));
+                console.log(index, item);
+            });
+            layui.form.render("select");
+        });
+
+    });
+</script>
