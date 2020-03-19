@@ -4,6 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Html和CSS的关系</title>
+    <link href="base.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
         h2 {
             font-size: 12px;
@@ -14,13 +15,59 @@
         span {
             color: blue;
         }
+
+        table tr td,
+        th {
+            border: 1px solid #000000;
+        }
+
+        /* p标签注释 */
+        p {
+            font-size: 12px;
+            color: red;
+            font-weight: bold;
+        }
+
+        /* 类选择器*/
+        .setGreen {
+            color: green;
+            font-size: 20px;
+        }
+
+        /*ID 选择器*/
+
+        #setGreenYellow {
+            color: greenyellow;
+        }
+
+        .one {
+            color: hotpink;
+        }
+
+        .two {
+            font-size: 28px;
+        }
+
+        .food li {
+            border: 1px solid red;
+        }
+        .first>span{
+            color: lightskyblue;
+        }
+        a:hover{
+            color: limegreen;
+        }
+        span,p {
+            font-size: 39px;
+        }
     </style>
 </head>
 
 <body>
     <h1>Hello World!</h1>
     <h2>勇气</h1>
-        <p>三年级时，我还是一个胆小如鼠的小女孩，上课从来不敢回答老师提出的问题，生怕回答错了老师会批评我。就一直没有这个勇气来回答老师提出的问题。学校举办的活动我也没勇气参加。</p>
+        <p style="color: chartreuse; font-size: 18px;">
+            三年级时，我还是一个胆小如鼠的小女孩，上课从来不敢回答老师提出的问题，生怕回答错了老师会批评我。就一直没有这个勇气来回答老师提出的问题。学校举办的活动我也没勇气参加。</p>
         <p>到了三年级下学期时，我们班上了一节公开课，老师提出了一个很简单的问题，班里很多同学都举手了，甚至成绩比我差很多的，也举手了，还说着："我来，我来。"我环顾了四周，就我没有举手。</p>
         <img src="http://img.mukewang.com/52b4113500018cf102000200.jpg">
 
@@ -71,7 +118,111 @@
                   alert(message);
                }
         </pre>
+        <div id="hotList">
+            <h2>添加新闻列表</h2>
+            <ul>
+                <li>精彩少年</li>
+                <li>美丽突然出现</li>
+                <li>触动心灵的旋律</li>
+            </ul>
+        </div>
 
+        <div id="learningInstructed">
+            <h2>ol 排行榜</h2>
+            <ol>
+                <li>前端开发面试心法 </li>
+                <li>零基础学习html</li>
+                <li>JavaScript全攻略</li>
+            </ol>
+        </div>
+
+        <h2>认识 table 标签</h2>
+        <table summary="表格简介文本">
+            <caption>标题文本</caption>
+            <tbody>
+                <tr>
+                    <th>序号</th>
+                    <th>姓名</th>
+                    <th>年龄</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>dawson</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>dawson</td>
+                    <td>18</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>a 标签</h2>
+        <a href="http://www.imooc.com" title="点击进入慕课网">click here!</a>
+        <br />
+        <a href="http://www.imooc.com" title="点击进入慕课网" target="_blank">点击打开新的窗口!</a>
+        <br />
+        <a href="mailto:send@qq.com?copy@qq.com&subject=主题&body=邮件主内容">点击邮件发送</a>
+        <h2>background-image</h2>
+        <img src="http://img.mukewang.com/52da54ed0001ecfa04120172.jpg" title="电影介绍">
+
+        <h2>用户表单 交互</h2>
+        <form method="post" action="save.php">
+            <label for="username">用户名:</label>
+            <input type="text" name="username" id="username" value="" />
+            <label for="pass">密码:</label>
+            <input type="password" name="pass" id="pass" value="" />
+            <br />
+            <label for="text">文本输入域:</label>
+            <textarea rows="10" cols="50">在这里输入内容</textarea>
+            <input type="submit" value="确定" name="submit" />
+            <input type="reset" value="重置" name="reset" />
+        </form>
+
+        <form action="save.php" method="post">
+            <label>性别:</label>
+            <label>男</label>
+            <input type="radio" value="1" name="gender" />
+            <label>女</label>
+            <input type="radio" value="2" name="gender" />
+            <br />
+            <label>爱好:</label>
+            <select multiple="multiple">
+                <option value="看书">看书</option>
+                <option value="旅游" selected="selected">旅游</option>
+                <option value="运动">运动</option>
+                <option value="购物">购物</option>
+            </select>
+        </form>
+        <h2>样式选择器</h2>
+        <span class="setGreen">类选择器在样式编码中是最常用的 .类选择器名称{css样式}</span>
+        <br />
+        <span id="setGreenYellow">类选择器在样式编码中是最常用的--ID 选择器</span>
+        <h2>类和ID选择器的区别</h2>
+        <p class="one two">ID选择器只能在文档中使用一次。与类选择器不同，在一个HTML文档中，ID选择器只能使用一次，而且仅一次。而类选择器可以使用多次。</p>
+        <p class="two">可以使用类选择器词列表方法为一个元素同时设置多个样式。我们可以为一个元素同时设多个样式，但只可以用类选择器的方法实现，ID选择器是不可以的（不能使用 ID 词列表）</p>
+
+        <p class="first">三年级时，我还是一个<span>胆小如鼠</span>的小女孩，上课从来不敢回答老师提出的问题，生怕回答错了老师会批评我。就一直没有这个勇气来回答老师提出的问题。学校举办的活动我也没勇气参加。</p>
+
+
+        <ul class="food">
+            <span>颜色</span>
+            <li>水果
+                <ul>
+                    <li class="bannerColor">香蕉</li>
+                    <li>苹果</li>
+                    <li>梨</li>
+                </ul>
+            </li>
+            <li>蔬菜
+                <ul>
+                    <li>白菜</li>
+                    <li>油菜</li>
+                    <li>卷心菜</li>
+                </ul>
+            </li>
+        </ul>
 </body>
 
 </html>
