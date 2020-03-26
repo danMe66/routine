@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="38890ed4-e6b2-446b-99aa-a7cc3db9ae93" name="Default Changelist" comment="" />
+    <list default="true" id="38890ed4-e6b2-446b-99aa-a7cc3db9ae93" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/php/xueyuanjun/TestUrl/urls.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/myFramework/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/myFramework/index.php" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,14 +30,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/db" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -83,6 +88,7 @@
       <workItem from="1580621485330" duration="72000" />
       <workItem from="1580807840608" duration="1968000" />
       <workItem from="1583891949606" duration="1628000" />
+      <workItem from="1585228756493" duration="1131000" />
     </task>
     <task id="LOCAL-00001" summary="swoole 后台发送 socket">
       <created>1583892010671</created>
@@ -117,18 +123,20 @@
       <screen x="1440" y="-110" width="1920" height="1080" />
     </state>
     <state x="2124" y="240" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/1440.-110.1920.1080@1440.-110.1920.1080" timestamp="1580809082823" />
-    <state x="2331" y="-224" key="CommitChangelistDialog2" timestamp="1583896358372">
-      <screen x="1440" y="-540" width="2560" height="1440" />
+    <state x="501" y="105" key="CommitChangelistDialog2" timestamp="1585230159768">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="2331" y="-224" key="CommitChangelistDialog2/0.0.1440.900/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1583896358372" />
+    <state x="501" y="105" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1585230159768" />
     <state x="2144" y="-191" key="DiffContextDialog" timestamp="1583896231992">
       <screen x="1440" y="-540" width="2560" height="1440" />
     </state>
     <state x="2144" y="-191" key="DiffContextDialog/0.0.1440.900/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1583896231992" />
-    <state x="2229" y="-181" key="SettingsEditor" timestamp="1583896209767">
-      <screen x="1440" y="-540" width="2560" height="1440" />
+    <state x="444" y="178" key="SettingsEditor" timestamp="1585230135492">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="2229" y="-181" key="SettingsEditor/0.0.1440.900/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1583896209767" />
+    <state x="444" y="178" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1585230135492" />
     <state x="2320" y="-80" key="Vcs.Push.Dialog.v2" timestamp="1583896360659">
       <screen x="1440" y="-540" width="2560" height="1440" />
     </state>
