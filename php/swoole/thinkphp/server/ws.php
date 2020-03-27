@@ -15,7 +15,7 @@ class Ws
 
         $this->ws->set([
             'enable_static_handler' => true,
-            'document_root' => "/Users/liudandan/myFiles/www/learing/php/swoole/thinkphp/public/static",
+            'document_root' => "/Users/liudandan/www/learing/php/swoole/thinkphp/public/static",
             'worker_num' => 4,
             'task_worker_num' => 4
         ]);

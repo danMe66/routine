@@ -2,10 +2,82 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38890ed4-e6b2-446b-99aa-a7cc3db9ae93" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/php/xueyuanjun/TestUrl/urls.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/admin/css/font.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/admin/css/xadmin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/admin/js/xadmin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/admin/lib/layui/css/layui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/admin/lib/layui/css/layui.mobile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/admin/lib/layui/css/modules/code.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/admin/lib/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/admin/lib/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/admin/lib/layui/css/modules/layer/default/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/admin/lib/layui/css/modules/layer/default/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/admin/lib/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/admin/lib/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/admin/lib/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/admin/lib/layui/font/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/admin/lib/layui/font/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/admin/lib/layui/font/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/admin/lib/layui/font/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/admin/lib/layui/images/face/0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/admin/lib/layui/images/face/1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/admin/lib/layui/images/face/2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/admin/lib/layui/images/face/3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/admin/lib/layui/images/face/4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/admin/lib/layui/lay/modules/carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/admin/lib/layui/lay/modules/code.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/admin/lib/layui/lay/modules/element.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/admin/lib/layui/lay/modules/flow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/admin/lib/layui/lay/modules/form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/admin/lib/layui/lay/modules/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/admin/lib/layui/lay/modules/laydate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/admin/lib/layui/lay/modules/layedit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/admin/lib/layui/lay/modules/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/admin/lib/layui/lay/modules/laypage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/admin/lib/layui/lay/modules/laytpl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/admin/lib/layui/lay/modules/mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/admin/lib/layui/lay/modules/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/admin/lib/layui/lay/modules/tree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/admin/lib/layui/lay/modules/upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/admin/lib/layui/lay/modules/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/live/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/live/assert/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/live/assert/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/live/assert/iconfont/demo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/live/assert/iconfont/demo_fontclass.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/live/assert/iconfont/demo_symbol.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/live/assert/iconfont/demo_unicode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/live/assert/iconfont/iconfont.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/live/assert/iconfont/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/live/assert/iconfont/iconfont.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/live/assert/iconfont/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/live/assert/iconfont/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/live/assert/iconfont/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/live/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/live/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/live/imgs/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/live/imgs/BA29FFAC-B8A1-49C4-B286-3A7ACF34C054.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/live/imgs/bao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/live/imgs/ha.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/live/imgs/match-poster.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/live/imgs/match-poster.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/live/imgs/match.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/live/imgs/pa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/live/imgs/player01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/live/imgs/player02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/live/imgs/team1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/live/imgs/team11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/live/imgs/team2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/live/imgs/team22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/live/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/live/js/chart-push.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/live/js/chart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/live/js/jquery-3.3.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/live/js/live.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/live/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/myFramework/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/myFramework/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/php/swoole/thinkphp/public/static/live/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/swoole/thinkphp/server/ws.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/swoole/thinkphp/server/ws.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +102,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/php/swoole/thinkphp/public/static" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -41,11 +113,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/php/swoole/thinkphp/public/static" />
       <recent name="$PROJECT_DIR$/db" />
       <recent name="$PROJECT_DIR$/nodejs/imooc_node" />
       <recent name="$PROJECT_DIR$/php/imooc_designPattern" />
       <recent name="$PROJECT_DIR$/php/laravel" />
-      <recent name="$PROJECT_DIR$/php/myFramework" />
     </key>
   </component>
   <component name="RunManager">
@@ -88,7 +160,9 @@
       <workItem from="1580621485330" duration="72000" />
       <workItem from="1580807840608" duration="1968000" />
       <workItem from="1583891949606" duration="1628000" />
-      <workItem from="1585228756493" duration="1131000" />
+      <workItem from="1585228756493" duration="1380000" />
+      <workItem from="1585313310769" duration="1880000" />
+      <workItem from="1585321426321" duration="1230000" />
     </task>
     <task id="LOCAL-00001" summary="swoole 后台发送 socket">
       <created>1583892010671</created>
@@ -104,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583896358845</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="学院君 - Laravel 从入门到精通( PHP 组件、框架、composer)&#10;PHP 实现 composer 自动加载">
+      <created>1585230238079</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1585230238079</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,18 +197,19 @@
     </ignored-roots>
     <MESSAGE value="swoole 后台发送 socket" />
     <MESSAGE value=".gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value=".gitignore" />
+    <MESSAGE value="学院君 - Laravel 从入门到精通( PHP 组件、框架、composer)&#10;PHP 实现 composer 自动加载" />
+    <option name="LAST_COMMIT_MESSAGE" value="学院君 - Laravel 从入门到精通( PHP 组件、框架、composer)&#10;PHP 实现 composer 自动加载" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2124" y="240" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580809082823">
       <screen x="1440" y="-110" width="1920" height="1080" />
     </state>
     <state x="2124" y="240" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/1440.-110.1920.1080@1440.-110.1920.1080" timestamp="1580809082823" />
-    <state x="501" y="105" key="CommitChangelistDialog2" timestamp="1585230159768">
+    <state x="501" y="105" key="CommitChangelistDialog2" timestamp="1585230237562">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="2331" y="-224" key="CommitChangelistDialog2/0.0.1440.900/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1583896358372" />
-    <state x="501" y="105" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1585230159768" />
+    <state x="501" y="105" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1585230237561" />
     <state x="2144" y="-191" key="DiffContextDialog" timestamp="1583896231992">
       <screen x="1440" y="-540" width="2560" height="1440" />
     </state>
@@ -137,9 +219,15 @@
     </state>
     <state x="2229" y="-181" key="SettingsEditor/0.0.1440.900/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1583896209767" />
     <state x="444" y="178" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1585230135492" />
-    <state x="2320" y="-80" key="Vcs.Push.Dialog.v2" timestamp="1583896360659">
-      <screen x="1440" y="-540" width="2560" height="1440" />
+    <state x="495" y="288" key="Vcs.Push.Dialog.v2" timestamp="1585230240287">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="2320" y="-80" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1583896360659" />
+    <state x="495" y="288" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1585230240287" />
+    <state x="405" y="156" width="782" height="621" key="find.popup" timestamp="1585321722989">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="405" y="156" width="782" height="621" key="find.popup/0.0.1440.900/1440.23.1920.1057@0.0.1440.900" timestamp="1585321722989" />
+    <state x="1980" y="206" width="639" height="729" key="find.popup/0.23.1440.877/1440.23.1920.1057@1440.23.1920.1057" timestamp="1585314401932" />
   </component>
 </project>
