@@ -4,6 +4,7 @@ namespace app\index\controller;
 
 use app\common\lib\Sms;
 use app\common\lib\Util;
+use think\facade\Log;
 
 class Send
 {
@@ -24,7 +25,8 @@ class Send
                 'code' => $code,
             ]
         ];
-        $_POST['http_serve']->task($taskData);
+        Log::info('taskData的数据为' . $taskData);
+//        $_POST['http_serve']->task($taskData);
         return Util::show(config('code.success'), '验证码发送成功!!!');
     }
 

@@ -5,7 +5,8 @@ namespace app\common\lib\task;
 use app\common\lib\redis\Predis;
 use app\common\lib\send\SendSmsFactory;
 use app\common\lib\Redis;
-use app\common\lib\Util;
+use app\index\controller\Login;
+use think\facade\Log;
 
 /**
  * 代表 swoole 里边所有的 task 异步任务都到这里来处理
@@ -25,11 +26,12 @@ class Task
             $sendSms = SendSmsFactory::GetInstanceByName(config('sms.smsProvider'));
             $res = $sendSms->sendCode($data['phone'], $data['code']);
         } catch (\Exception $e) {
+            Log::info('发生验证码错误日志' . $e);
             return false;
         }
         if ($res) {
             //记录redis
-            Predis::getInstance()->set(Redis::smsKey($data['phone']),$data['code'], config('redis.out_time'));
+            Predis::getInstance()->set(Redis::smsKey($data['phone']), $data['code'], config('redis.out_time'));
         } else {
             return false;
         }
