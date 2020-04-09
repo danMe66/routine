@@ -76,7 +76,7 @@ class Response
         if (class_exists($class)) {
             return new $class($data, $code, $header, $options);
         } else {
-            return new static($data, $code, $header, $options);
+            return new Response($data, $code, $header, $options);
         }
     }
 
@@ -119,7 +119,6 @@ class Response
             }
         }
 
-        echo $data;
 
         if (function_exists('fastcgi_finish_request')) {
             // 提高页面响应

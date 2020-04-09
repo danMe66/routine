@@ -14,11 +14,11 @@ namespace think;
 class Container
 {
     // 容器对象实例
-    protected static $instance;
+    public static $instance;
     // 容器中的对象实例
-    protected $instances = [];
+    public $instances = [];
     // 容器中绑定的对象标识
-    protected $bind = [];
+    public $bind = [];
 
     /**
      * 获取当前容器的实例（单例）

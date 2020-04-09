@@ -3,9 +3,11 @@
 
 namespace app\common\lib\send;
 
+use app\common\base\exception\UnexpectedValueException;
 use app\common\lib\send\enum\SmsProvider;
 use app\common\lib\send\Impl\DingTalkImpl;
 use app\common\lib\send\Impl\YunPianImpl;
+use ReflectionException;
 
 class SendSmsFactory
 {
@@ -30,6 +32,8 @@ class SendSmsFactory
      * 根据名称获取实例化的对象
      * @param $provider
      * @return mixed
+     * @throws ReflectionException
+     * @throws UnexpectedValueException
      */
     public static function GetInstanceByName($provider)
     {
@@ -41,7 +45,8 @@ class SendSmsFactory
      * 根据字符串读取枚举
      * @param $provider
      * @return mixed|null
-     * @throws \ReflectionException
+     * @throws ReflectionException
+     * @throws UnexpectedValueException
      */
     public static function GetProviderByName($provider)
     {

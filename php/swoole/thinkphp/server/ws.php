@@ -7,11 +7,13 @@ class Ws
 {
     const HOST = "0.0.0.0";
     const PORT = 8811;
+    CONST CHART_PORT = 8812;
     public $ws = null;
 
     public function __construct()
     {
         $this->ws = new swoole_websocket_server(self::HOST, self::PORT);
+        $this->ws->listen(self::HOST, self::CHART_PORT, SWOOLE_SOCK_TCP);
 
         $this->ws->set([
             'enable_static_handler' => true,
@@ -103,7 +105,7 @@ class Ws
         //分发 task 任务机制，让不同的任务走不同的逻辑
         $obj = new \app\common\lib\task\Task;
         $method = $data['method'];
-        return $obj->$method($data['data']);
+        return $obj->$method($data['data'],$serv);
     }
 
     /**

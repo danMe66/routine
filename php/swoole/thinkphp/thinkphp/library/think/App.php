@@ -108,7 +108,8 @@ class App implements \ArrayAccess
         $this->beginTime   = microtime(true);
         $this->beginMem    = memory_get_usage();
         $this->thinkPath   = dirname(dirname(__DIR__)) . '/';
-        $this->appPath     = $appPath ?: realpath(dirname($_SERVER['SCRIPT_FILENAME']) . '/../application') . '/';
+        //$this->appPath     = $appPath ?: realpath(dirname($_SERVER['SCRIPT_FILENAME']) . '/../application') . '/';
+        $this->appPath = APP_PATH;
         $this->rootPath    = dirname(realpath($this->appPath)) . '/';
         $this->runtimePath = $this->rootPath . 'runtime/';
         $this->routePath   = $this->rootPath . 'route/';
@@ -192,23 +193,23 @@ class App implements \ArrayAccess
      * @param string $module 模块名
      * @return void
      */
-    public function init($module = '')
+    public function init($moduleName = '')
     {
         // 定位模块目录
-        $module = $module ? $module . DIRECTORY_SEPARATOR : '';
-        $path   = $this->appPath . $module;
+        $moduleName = $moduleName ? $moduleName . DIRECTORY_SEPARATOR : '';
+        $path   = $this->appPath . $moduleName;
 
         // 加载初始化文件
         if (is_file($path . 'init.php')) {
             include $path . 'init.php';
-        } elseif (is_file($this->runtimePath . $module . 'init.php')) {
-            include $this->runtimePath . $module . 'init.php';
+        } elseif (is_file($this->runtimePath . $moduleName . 'init.php')) {
+            include $this->runtimePath . $moduleName . 'init.php';
         } else {
             // 自动读取配置文件
             if (is_dir($path . 'config')) {
                 $dir = $path . 'config';
-            } elseif (is_dir($this->configPath . $module)) {
-                $dir = $this->configPath . $module;
+            } elseif (is_dir($this->configPath . $moduleName)) {
+                $dir = $this->configPath . $moduleName;
             }
 
             if (isset($dir)) {
@@ -248,7 +249,6 @@ class App implements \ArrayAccess
     {
         // 初始化应用
         $this->initialize();
-
         try {
             if (defined('BIND_MODULE')) {
                 // 模块/控制器绑定
@@ -320,9 +320,9 @@ class App implements \ArrayAccess
             $isAjax = $this->request->isAjax();
             $type   = $isAjax ? $this->config('app.default_ajax_return') : $this->config('app.default_return_type');
 
-            $response = Response::create($data, $type);
+            $response = (new \think\Response)->create($data, $type);
         } else {
-            $response = Response::create();
+            $response = (new \think\Response)->create();
         }
 
         // 监听app_end

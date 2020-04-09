@@ -4,8 +4,11 @@ namespace app\common\lib\redis;
 
 class Predis
 {
-    public $redis = '';
-
+    public $redis = "";
+    /**
+     * 定义单例模式的变量
+     * @var null
+     */
     private static $_instance = null;
 
     public static function getInstance()
@@ -19,14 +22,14 @@ class Predis
     private function __construct()
     {
         $this->redis = new \Redis();
-        $results = $this->redis->connect(config('redis.host'), config('redis.port'), config('redis.timeOut'));
-        if ($results == false) {
-            throw new \Exception("redis 连接错误!!!");
+        $result = $this->redis->connect(config('redis.host'), config('redis.port'), config('redis.timeOut'));
+        if ($result === false) {
+            throw new \Exception('redis connect error');
         }
     }
 
     /**
-     * get
+     * set
      * @param $key
      * @param $value
      * @param int $time
@@ -43,38 +46,45 @@ class Predis
         if (!$time) {
             return $this->redis->set($key, $value);
         }
+
         return $this->redis->setex($key, $time, $value);
     }
 
     /**
-     * set
+     * get
      * @param $key
-     * @return bool|mixed|string
+     * @return bool|string
      */
     public function get($key)
     {
         if (!$key) {
             return '';
         }
+
         return $this->redis->get($key);
     }
 
     /**
-     * 集合总数
      * @param $key
-     * @param $value
-     * @return int
+     * @return array
      */
     public function sMembers($key)
     {
         return $this->redis->sMembers($key);
     }
 
+    /**
+     * @param $name
+     * @param $arguments
+     * @return array
+     */
     public function __call($name, $arguments)
     {
+        //echo $name.PHP_EOL;
+        //print_r($arguments);
         if (count($arguments) != 2) {
             return '';
         }
-        return $this->redis->$name($arguments[0], $arguments[1]);
+        $this->redis->$name($arguments[0], $arguments[1]);
     }
 }

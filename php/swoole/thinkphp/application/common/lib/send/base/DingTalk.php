@@ -6,7 +6,8 @@ namespace app\common\lib\send\base;
  * 钉钉机器人
  * Class DingTalk
  * @package app\common\lib\send\base
- * @link 钉钉文档：https://ding-doc.dingtalk.com/doc#/serverapi2/qf2nxq
+ *  钉钉文档：
+ * @link https://ding-doc.dingtalk.com/doc#/serverapi2/qf2nxq
  */
 class DingTalk
 {

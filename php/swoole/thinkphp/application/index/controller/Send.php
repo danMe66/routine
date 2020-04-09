@@ -25,8 +25,7 @@ class Send
                 'code' => $code,
             ]
         ];
-        Log::info('taskData的数据为' . $taskData);
-//        $_POST['http_serve']->task($taskData);
+        $_POST['http_serve']->task($taskData);
         return Util::show(config('code.success'), '验证码发送成功!!!');
     }
 

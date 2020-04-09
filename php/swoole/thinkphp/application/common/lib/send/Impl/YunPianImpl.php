@@ -7,7 +7,7 @@ use Yunpian\Sdk\YunpianClient;
 
 ini_set("display_errors", "on");
 
-require_once APP_PATH . '/../extend/yunpian-php-sdk/vendor/autoload.php';
+require_once APP_PATH . '/../extend/yunpian-sdk/vendor/autoload.php';
 
 class YunPianImpl implements ISendSms
 {
