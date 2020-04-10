@@ -12,7 +12,7 @@ class HttpServer
 	private $application;
 
 	public function __construct() {
-		$http = new swoole_http_server("127.0.0.1", 9501);
+		$http = new swoole_http_server("127.0.0.1", 8211);
 
 		$http->set(
 			array(

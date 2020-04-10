@@ -1,6 +1,6 @@
 <?php
 
-namespace learing\php\Creational\FactoryMethod;
+namespace FactoryMethod;
 /**
  * 创建一个汽车工厂接口
  * Interface CarFactory

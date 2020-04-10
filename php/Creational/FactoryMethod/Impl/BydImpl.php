@@ -1,10 +1,12 @@
 <?php
-namespace learing\php\Creational\FactoryMethod\Impl;
+namespace FactoryMethod\Impl;
+use FactoryMethod\CarFactory;
+
 /**
  * 比亚迪汽车厂
  * Class BydImpl
  */
-class BydImpl implements \learing\php\Creational\FactoryMethod\CarFactory
+class BydImpl implements CarFactory
 {
 
     /**
