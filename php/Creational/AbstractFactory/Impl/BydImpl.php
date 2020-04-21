@@ -1,5 +1,7 @@
 <?php
 
+namespace AbstractFactory\Impl;
+
 /**
  * 比亚迪零部件制造代理商
  * Class BydImpl

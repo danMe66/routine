@@ -1,5 +1,7 @@
 <?php
 
+namespace AbstractFactory\Impl;
+
 /**
  * 宝马零部件制造代理商
  * Class BmImpl
