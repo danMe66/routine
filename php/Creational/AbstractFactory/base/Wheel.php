@@ -1,6 +1,8 @@
 <?php
 
-namespace AbstractFactory\plugs;
+namespace AbstractFactory\base;
+
+use AbstractFactory\AssembleInterface;
 
 /**
  * 车轮组件车间
