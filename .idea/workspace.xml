@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38890ed4-e6b2-446b-99aa-a7cc3db9ae93" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/php/Creational/AbstractFactory/AbstractFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/Creational/AbstractFactory/Impl/BmImpl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/Creational/AbstractFactory/Impl/BydImpl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/Creational/AbstractFactory/plugs/Shell.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/Creational/AbstractFactory/plugs/Wheel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -119,7 +114,9 @@
       <workItem from="1586828707404" duration="498000" />
       <workItem from="1586829511628" duration="265000" />
       <workItem from="1586829809703" duration="834000" />
-      <workItem from="1587468143167" duration="1906000" />
+      <workItem from="1587468143167" duration="2761000" />
+      <workItem from="1587639252670" duration="334000" />
+      <workItem from="1587693805674" duration="46000" />
     </task>
     <task id="LOCAL-00001" summary="swoole 后台发送 socket">
       <created>1583892010671</created>
@@ -184,7 +181,21 @@
       <option name="project" value="LOCAL" />
       <updated>1586522393514</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="抽象工厂模式">
+      <created>1587470796066</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1587470796066</updated>
+    </task>
+    <task id="LOCAL-00011" summary="优化">
+      <created>1587639515725</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1587639515725</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,7 +228,9 @@
     <MESSAGE value="修改autoload自动加载" />
     <MESSAGE value="添加slim" />
     <MESSAGE value="结构调整" />
-    <option name="LAST_COMMIT_MESSAGE" value="结构调整" />
+    <MESSAGE value="抽象工厂模式" />
+    <MESSAGE value="优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="23" width="1920" height="1053" key="#CLI_Interpreters" timestamp="1586518477006">
@@ -242,12 +255,12 @@
       <screen x="0" y="0" width="1920" height="1076" />
     </state>
     <state x="424" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1076@0.0.1920.1076" timestamp="1586773850319" />
-    <state x="684" y="349" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587468464073">
+    <state x="684" y="349" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587639313619">
       <screen x="0" y="0" width="1920" height="1076" />
     </state>
     <state x="2124" y="240" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/1440.-110.1920.1080@1440.-110.1920.1080" timestamp="1580809082823" />
     <state x="2124" y="350" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1586436754980" />
-    <state x="684" y="349" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1076@0.0.1920.1076" timestamp="1587468464073" />
+    <state x="684" y="349" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1076@0.0.1920.1076" timestamp="1587639313619" />
     <state x="722" y="175" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1587470763156">
       <screen x="0" y="0" width="1920" height="1076" />
     </state>
@@ -261,13 +274,13 @@
       <screen x="0" y="0" width="1920" height="1076" />
     </state>
     <state x="723" y="250" key="#xdebugger.evaluate/0.0.1920.1076@0.0.1920.1076" timestamp="1586520217167" />
-    <state x="124" y="146" key="CommitChangelistDialog2" timestamp="1586522388222">
-      <screen x="0" y="23" width="1920" height="1053" />
+    <state x="668" y="126" key="CommitChangelistDialog2" timestamp="1587639515501">
+      <screen x="0" y="0" width="1920" height="1076" />
     </state>
     <state x="2331" y="-224" key="CommitChangelistDialog2/0.0.1440.900/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1583896358372" />
     <state x="2108" y="126" key="CommitChangelistDialog2/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1586446257728" />
     <state x="501" y="105" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1585445687489" />
-    <state x="668" y="126" key="CommitChangelistDialog2/0.0.1920.1076@0.0.1920.1076" timestamp="1586521566253" />
+    <state x="668" y="126" key="CommitChangelistDialog2/0.0.1920.1076@0.0.1920.1076" timestamp="1587639515501" />
     <state x="124" y="146" key="CommitChangelistDialog2/0.23.1920.1053@0.23.1920.1053" timestamp="1586522388222" />
     <state x="1968" y="262" width="1152" height="720" key="DiffContextDialog" timestamp="1586001872057">
       <screen x="1440" y="0" width="1920" height="1080" />
@@ -363,19 +376,19 @@
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state x="2247" y="251" key="VCS.ChangeListViewerDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1586001725492" />
-    <state x="377" y="165" key="Vcs.Push.Dialog.v2" timestamp="1586522416355">
+    <state x="377" y="165" key="Vcs.Push.Dialog.v2" timestamp="1587639517366">
       <screen x="0" y="0" width="1920" height="1076" />
     </state>
     <state x="2320" y="-80" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1583896360659" />
     <state x="1817" y="166" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1586436705171" />
     <state x="283" y="138" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1585445690581" />
-    <state x="377" y="165" key="Vcs.Push.Dialog.v2/0.0.1920.1076@0.0.1920.1076" timestamp="1586522416355" />
-    <state x="700" y="447" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587468232479">
+    <state x="377" y="165" key="Vcs.Push.Dialog.v2/0.0.1920.1076@0.0.1920.1076" timestamp="1587639517366" />
+    <state x="700" y="447" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587519254234">
       <screen x="0" y="0" width="1920" height="1076" />
     </state>
     <state x="525" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1585324419507" />
     <state x="525" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1585447595487" />
-    <state x="700" y="447" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1076@0.0.1920.1076" timestamp="1587468232479" />
+    <state x="700" y="447" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1076@0.0.1920.1076" timestamp="1587519254234" />
     <state x="0" y="23" width="1920" height="1053" key="com.jetbrains.php.config.phpInfo.PhpInfo.PhpInfoDialog" timestamp="1586518747172">
       <screen x="0" y="0" width="1920" height="1076" />
     </state>
