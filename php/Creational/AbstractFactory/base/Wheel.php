@@ -10,6 +10,7 @@ use AbstractFactory\AssembleInterface;
  */
 abstract class Wheel implements AssembleInterface
 {
+    protected $name = "XXX车轮组装部";
     /**
      * 大小
      * @var string
@@ -24,11 +25,13 @@ abstract class Wheel implements AssembleInterface
 
     /**
      * Shell constructor.
+     * @param $name
      * @param int $size
      * @param int $weight
      */
-    public function __construct($size, $weight)
+    public function __construct($name, $size, $weight)
     {
+        $this->name = $name;
         $this->size = $size;
         $this->weight = $weight;
     }

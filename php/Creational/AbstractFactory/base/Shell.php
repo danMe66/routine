@@ -10,22 +10,20 @@ use AbstractFactory\AssembleInterface;
  */
 abstract class Shell implements AssembleInterface
 {
+    protected $name = "XXX外壳组装部";
     /**
      * @var string
      */
     protected $color;
 
     /**
-     * @var string
-     */
-    protected $carType;
-
-    /**
      * Shell constructor.
+     * @param $name
      * @param string $color 外壳颜色
      */
-    public function __construct($color = '')
+    public function __construct($name, $color = '')
     {
+        $this->name = $name;
         $this->color = $color;
     }
 }

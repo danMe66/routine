@@ -2,6 +2,8 @@
 
 namespace AbstractFactory\Impl;
 
+use AbstractFactory\AbstractFactory;
+
 /**
  * 比亚迪零部件制造代理商
  * Class BydImpl
@@ -15,7 +17,7 @@ class BydImpl extends AbstractFactory
      */
     public function createWheel($rubber)
     {
-        // TODO: Implement createWheel() method.
+        return '比亚迪车轮' . $rubber;
     }
 
     /**
@@ -24,6 +26,6 @@ class BydImpl extends AbstractFactory
      */
     public function createShell($iron)
     {
-        // TODO: Implement createShell() method.
+        return '比亚迪外壳' . $iron;
     }
 }
