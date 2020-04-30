@@ -1,0 +1,16 @@
+package com.study.dataAccess;
+
+public class DataAccess {
+
+	public static void main(String[] args) {
+		// 第一步：导包,将数据库驱动jar包拷贝到lib文件下
+		// 第二部：加载驱动
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}

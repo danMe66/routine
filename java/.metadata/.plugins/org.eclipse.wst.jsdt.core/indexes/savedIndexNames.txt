@@ -1,0 +1,5 @@
+INDEX VERSION 1.4+/Users/liudandan/www/learing/java/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3301994153.index
+816912152.index
+865646088.index
+2795788560.index
