@@ -1,4 +1,5 @@
 .vscode/
 /vendor
-/.idea
+*.idea
 /.vagrant
+/Servers/
