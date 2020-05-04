@@ -9,6 +9,10 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<a href="index.jsp?abc=Hello Word  你好 世界！"> <%
+ 	out.print("点击跳转传递参数");
+ %>
+	</a>
 	<table border="1px">
 		<tr>
 			<th>ID</th>
@@ -20,12 +24,8 @@
 		while (res.next()) {
 		%>
 		<tr>
-			<td>
-				<%=res.getInt("id")%>
-			</td>
-			<td>
-				<%=res.getString("name")%>
-			</td>
+			<td><%=res.getInt("id")%></td>
+			<td><%=res.getString("name")%></td>
 		</tr>
 		<%
 			}
