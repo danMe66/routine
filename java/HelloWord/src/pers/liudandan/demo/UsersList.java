@@ -14,11 +14,11 @@ public class UsersList {
 	public ResultSet getList(String sql) {
 		String connUrl = "jdbc:mysql://localhost/learning";
 		String connUser = "root";
-		String connpassword = "root";
+		String connPassword = "root";
 		ResultSet res = null;
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			Connection conn = DriverManager.getConnection(connUrl, connUser, connpassword);
+			Connection conn = DriverManager.getConnection(connUrl, connUser, connPassword);
 			PreparedStatement cmd = conn.prepareStatement(sql);
 			res = cmd.executeQuery();
 			return res;

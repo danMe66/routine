@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38890ed4-e6b2-446b-99aa-a7cc3db9ae93" name="Default Changelist" comment="优化">
-      <change afterPath="$PROJECT_DIR$/php/Framework/swoole/thinkphp/runtime/log/202004/18_cli.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/HelloWord/WebContent/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/HelloWord/WebContent/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/HelloWord/WebContent/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/java/HelloWord/WebContent/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/HelloWord/WebContent/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/java/HelloWord/WebContent/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Servers2/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Servers2/.settings/org.eclipse.wst.server.core.prefs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +121,7 @@
       <workItem from="1587693805674" duration="46000" />
       <workItem from="1588302358722" duration="1440000" />
       <workItem from="1588304843297" duration="3587000" />
-      <workItem from="1588557591107" duration="891000" />
+      <workItem from="1588557591107" duration="1569000" />
     </task>
     <task id="LOCAL-00001" summary="swoole 后台发送 socket">
       <created>1583892010671</created>
@@ -322,11 +320,11 @@
       <screen x="0" y="0" width="1920" height="1076" />
     </state>
     <state x="723" y="250" key="#xdebugger.evaluate/0.0.1920.1076@0.0.1920.1076" timestamp="1586520217167" />
-    <state x="501" y="101" key="CommitChangelistDialog2" timestamp="1588557905920">
+    <state x="501" y="101" key="CommitChangelistDialog2" timestamp="1588602400611">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="2331" y="-224" key="CommitChangelistDialog2/0.0.1440.900/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1583896358372" />
-    <state x="501" y="101" key="CommitChangelistDialog2/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1588557905920" />
+    <state x="501" y="101" key="CommitChangelistDialog2/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1588602400611" />
     <state x="2108" y="126" key="CommitChangelistDialog2/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1588303396991" />
     <state x="501" y="105" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1585445687489" />
     <state x="668" y="126" key="CommitChangelistDialog2/0.0.1920.1076@0.0.1920.1076" timestamp="1587639515501" />

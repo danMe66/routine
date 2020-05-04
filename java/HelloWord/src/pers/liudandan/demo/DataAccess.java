@@ -12,11 +12,11 @@ public class DataAccess {
 		// 第二部：加载驱动
 		String connUrl = "jdbc:mysql://localhost/learning";
 		String connUser = "root";
-		String connpassword = "root";
+		String connPassword = "root";
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			// 第三步：数据驱动管理者或者连接对象
-			Connection conn = DriverManager.getConnection(connUrl, connUser, connpassword);
+			Connection conn = DriverManager.getConnection(connUrl, connUser, connPassword);
 			// 第四步：创建命令对象
 			PreparedStatement cmd = conn.prepareStatement("select * from user");
 			ResultSet res = cmd.executeQuery();
