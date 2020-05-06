@@ -1,9 +1,23 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%
+	String rp = request.getContextPath();//获取网站项目名称
+%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
+<script type="text/javascript" src="<%=rp%>/scripts/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		//页面加载就发送ajax请求b页面
+		<%-- $.get("<%=rp%>/indexb.jsp","",function(rsp){
+			$("#contents").html(rsp);
+		}); --%>
+		// ajax 请求servlet返回json数据
+		$("#contents").load("<%=rp%>/Demo/HelloServlet")
+	});
+</script>
 <title>Insert title here</title>
 </head>
 <body>
@@ -25,9 +39,10 @@
 		<a href="<%=RootPath%>/Demo/HelloServlet">点击我调用 Servlet 的 GET 方法</a>
 	</button>
 	<br>
-	<form name="form"
-		action="<%=request.getContextPath()%>/Demo/HelloServlet" method="POST">
+	<form name="form" action="<%=rp%>/Demo/HelloServlet" method="POST">
 		<input type="submit" name="btnpost" value="点击我调用 Servlet 的 POST 方法" />
 	</form>
+	通过ajax拿到列表页indexb.jsp的内容
+	<div id="contents"></div>
 </body>
 </html>

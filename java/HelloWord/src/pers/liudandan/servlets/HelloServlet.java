@@ -32,9 +32,11 @@ public class HelloServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// 处理输出的格式，否则会乱码
-		response.setCharacterEncoding("GBK");
+		response.setCharacterEncoding("UTF-8");
 		PrintWriter out = response.getWriter();
-		out.println("我是 GET 处理方法");
+		// 返回json数据
+		String json = "[['id':1,'name':‘小明’,'id':2,'name':'小红']]";
+		out.println(json);
 		out.close();
 	}
 
