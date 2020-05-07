@@ -35,7 +35,7 @@ public class HelloServlet extends HttpServlet {
 		response.setCharacterEncoding("UTF-8");
 		PrintWriter out = response.getWriter();
 		// 返回json数据
-		String json = "[['id':1,'name':‘小明’,'id':2,'name':'小红']]";
+		String json = "[{'id':1,'name':‘小明’},{'id':2,'name':'小红'}]";
 		out.println(json);
 		out.close();
 	}

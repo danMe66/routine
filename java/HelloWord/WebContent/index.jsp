@@ -15,8 +15,18 @@
 			$("#contents").html(rsp);
 		}); --%>
 		// ajax 请求servlet返回json数据
-		$("#contents").load("<%=rp%>/Demo/HelloServlet")
-	});
+		$("#contents").load("<%=rp%>/Demo/HelloServlet");
+		$.get("<%=rp%>/Demo/HelloServlet","",function(rsp){
+			//先对rsp进行处理，然后解析json数据
+			var json=eval('('+rsp+')');
+			var table=$("<table border="1px"><tr><th>序号</th><th>名称</th></tr></table>");
+			//遍历数组
+			$(json).each(function(i,o){
+				table.append("<tr><td>"+o.id+"</td><td>"+o.name+"</td></tr>");
+			});
+			$("#contents").html(table);
+		});
+	})
 </script>
 <title>Insert title here</title>
 </head>
