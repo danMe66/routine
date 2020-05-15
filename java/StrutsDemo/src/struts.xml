@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+	"http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+	<!-- 让Struts支持动态方法调用 -->
+	<constant name="struts.enable.DynamicMethodInvocation"
+		value="false" />
+	<!-- 是否启用开发者模式 -->
+	<constant name="struts.devMode" value="true" />
+
+	<package name="default" namespace="/" extends="struts-default">
+
+		<default-action-ref name="index" />
+
+		<global-results>
+			<result name="error">/error.jsp</result>
+		</global-results>
+
+		<global-exception-mappings>
+			<exception-mapping
+				exception="java.lang.Exception" result="error" />
+		</global-exception-mappings>
+
+		<action name="index">
+			<result type="redirectAction">
+				<param name="actionName">HelloAction</param>
+				<param name="namespace">/</param>
+			</result>
+		</action>
+	</package>
+
+</struts>
+
