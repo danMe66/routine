@@ -26,14 +26,138 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       // 应用程序名称
       title: 'Flutter Demo',
+      // initialRoute: "/", //名为"/"的路由作为应用的home(首页)
       // 主题
       theme: ThemeData(
         // 蓝色主题
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
+      // 注册路由表
+      routes: {
+        "new_page": (context) => NewRoute(),
+        "echo_page": (context) => EchoRoute(),
+        // "/": (context) => MyHomePage(title: 'Flutter Demo Home Page'), //注册首页路由
+      },
       // 应用首页路由
       home: MyHomePage(title: 'Flutter Demo Home Page'),
+    );
+  }
+}
+
+// 创建一个新的路由组件
+class NewRoute extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("新路由页面的title"),
+      ),
+      body: Center(
+        child: Text("hello,你已经跳转到新的路由页面了，恭喜你！"),
+      ),
+    );
+  }
+}
+
+class EchoRoute extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    //获取路由参数
+    var args = ModalRoute.of(context).settings.arguments;
+    //...省略无关代码
+  }
+}
+
+// 创建一个传参路由
+class ParamsRoute extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("此页面已经悄悄加上参数啦"),
+      ),
+      body: Center(
+        child: RaisedButton(
+          onPressed: () async {
+            // 打开`TipRoute`，并等待返回结果
+            var result = await Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) {
+                  return TipRoute(
+                    // 路由参数
+                    text: "我是返回过来的参数",
+                  );
+                },
+              ),
+            );
+            //输出`TipRoute`路由返回结果
+            print("路由返回值: $result");
+          },
+          child: Text("打开提示页"),
+        ),
+      ),
+    );
+  }
+}
+
+// 继续创建路由，用来传参
+class TipRoute extends StatelessWidget {
+  TipRoute({
+    Key key,
+    // 接收一个text参数
+    @required this.text,
+  }) : super(key: key);
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("参数已经传过来啦"),
+      ),
+      body: Padding(
+        padding: EdgeInsets.all(18),
+        child: Center(
+          child: Column(
+            children: <Widget>[
+              Text(text),
+              RaisedButton(
+                onPressed: () => Navigator.pop(context, "我是返回值"),
+                child: Text("返回"),
+              )
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class RouterTestRoute extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: RaisedButton(
+        onPressed: () async {
+          // 打开`TipRoute`，并等待返回结果
+          var result = await Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) {
+                return TipRoute(
+                  // 路由参数
+                  text: "我是提示xxxx",
+                );
+              },
+            ),
+          );
+          //输出`TipRoute`路由返回结果
+          print("路由返回值: $result");
+        },
+        child: Text("打开提示页"),
+      ),
     );
   }
 }
@@ -93,11 +217,44 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'You have pushed the button this many times:',
+              '你可以点击下方的加号按钮看点击加号按钮的次数:',
             ),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
+            ),
+            // 添加一个按钮（FlatButton)
+            FlatButton(
+              child: Text("点击跳转到一个新的路由URL"),
+              textColor: Colors.blue,
+              onPressed: () {
+                // 跳转到新路由（只不过这里的路由是）
+                Navigator.pushNamed(context, "new_page");
+                // 导航到新路由
+                // Navigator.push(context, MaterialPageRoute(builder: (context) {
+                //   return NewRoute();
+                // }));
+              },
+            ),
+            FlatButton(
+              child: Text("第一种页面传参"),
+              textColor: Colors.blue,
+              onPressed: () {
+                // 导航到新路由
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return ParamsRoute();
+                }));
+              },
+            ),
+            FlatButton(
+              child: Text("第二种页面传参"),
+              textColor: Colors.blue,
+              onPressed: () {
+                // 导航到新路由
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return RouterTestRoute();
+                }));
+              },
             ),
           ],
         ),
