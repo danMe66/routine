@@ -50,7 +50,7 @@ class MyApp extends StatelessWidget {
 class RandomWordsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-   // 生成随机字符串
+    // 生成随机字符串
     final wordPair = new WordPair.random();
     return Padding(
       padding: const EdgeInsets.all(8.0),
@@ -149,6 +149,7 @@ class TipRoute extends StatelessWidget {
   }
 }
 
+// 路由传参
 class RouterTestRoute extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -173,6 +174,22 @@ class RouterTestRoute extends StatelessWidget {
         child: Text("打开提示页"),
       ),
     );
+  }
+}
+
+// 加载渲染图片
+class ImagerRoute extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    // 渲染图片
+    return Image.asset("assets/flutter.png");
+    //   return new DecoratedBox(
+    //   decoration: new BoxDecoration(
+    //     image: new DecorationImage(
+    //       image: new AssetImage('graphics/background.png'),
+    //     ),
+    //   ),
+    // );
   }
 }
 
@@ -269,6 +286,16 @@ class _MyHomePageState extends State<MyHomePage> {
                 // 导航到新路由
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
                   return RouterTestRoute();
+                }));
+              },
+            ),
+            FlatButton(
+              child: Text("点击跳转到有图片的页面"),
+              textColor: Colors.blue,
+              onPressed: () {
+                // 导航到新路由
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return ImagerRoute();
                 }));
               },
             ),
