@@ -1,6 +1,7 @@
 // 引包：此行代码作用是导入了材质UI组件库。
 // 材料是一种标准的移动端和网页端的视觉设计语言，扑默认提供了一套丰富的材质风格的UI组件。
 import 'package:flutter/material.dart';
+import 'package:english_words/english_words.dart';
 
 // 应用程序入口
 void main() {
@@ -41,6 +42,19 @@ class MyApp extends StatelessWidget {
       },
       // 应用首页路由
       home: MyHomePage(title: 'Flutter Demo Home Page'),
+    );
+  }
+}
+
+// 使用english_words包来生成随机字符串
+class RandomWordsWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+   // 生成随机字符串
+    final wordPair = new WordPair.random();
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: new Text(wordPair.toString()),
     );
   }
 }
@@ -223,6 +237,8 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
             ),
+            // 生成随机字符串
+            RandomWordsWidget(),
             // 添加一个按钮（FlatButton)
             FlatButton(
               child: Text("点击跳转到一个新的路由URL"),
