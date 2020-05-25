@@ -182,7 +182,7 @@ class ImagerRoute extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // 渲染图片
-    return Image.asset("assets/flutter.png");
+    return Image.asset("assets/flutter-wget.png");
     //   return new DecoratedBox(
     //   decoration: new BoxDecoration(
     //     image: new DecorationImage(
@@ -291,6 +291,16 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             FlatButton(
               child: Text("点击跳转到有图片的页面"),
+              textColor: Colors.blue,
+              onPressed: () {
+                // 导航到新路由
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return ImagerRoute();
+                }));
+              },
+            ),
+            FlatButton(
+              child: Text("异常处理"),
               textColor: Colors.blue,
               onPressed: () {
                 // 导航到新路由
