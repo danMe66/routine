@@ -9,8 +9,13 @@ void main() {
           title: Text("I am rich"),
           backgroundColor: Colors.blueGrey[900],
         ),
-        body: Image(
-          image: NetworkImage('https://www.nasa.gov/sites/default/files/thumbnails/image/blackhole.png'),
+        body: Center(
+          child: Image(
+            // 使用网络图像
+            // image: NetworkImage('https://www.nasa.gov/sites/default/files/thumbnails/image/blackhole.png'),
+            // 使用本地资源图像
+            image: AssetImage('images/diamond.png'),
+          ),
         ),
       ),
     ),
