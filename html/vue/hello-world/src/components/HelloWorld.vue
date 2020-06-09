@@ -1,7 +1,7 @@
 <template>
   <div>
     <h3>文件上传</h3>
-    <van-uploader :after-read="fileup" />
+    <van-uploader :after-read="fileup" v-model="fileList" multiple :max-count="2" />
   </div>
 </template>
 <script>
@@ -13,17 +13,21 @@ export default {
     };
   },
   methods: {
-    fileup(file) {
+    fileup(files) {
+      console.log(files);
       this.$axios.defaults.headers["Content-Type"] =
         "application/x-www-form-urlencoded;charset=UTF-8";
       this.$axios.defaults.headers["Authorization"] =
         "Bearer 28390af2-768c-43de-9338-4f7537fb7741";
+      var ldd = [];
+      for (let i = 0; i < files.length; i++) {
+        console.log(files[i]);
+        ldd.push = this.base64ToFile(files[i], files[i].file.name);
+      }
+      console.log('-------');
+      console.log(ldd);
       var formdata = new FormData();
-      formdata.append(
-        "file",
-        // 处理文件(处理为多文件上传)
-        this.dataURLtoFile(file.content, this.fileName)
-      );
+      formdata.append('file',ldd);
       // 上传文件到API
       this.$axios
         .post("http://bbs-api.test/api/upload", formdata)
@@ -31,18 +35,17 @@ export default {
           return res;
         });
     },
-    dataURLtoFile(dataurl, filename) {
-      //将base64转换为文件
-      var arr = dataurl.split(","),
-        mime = arr[0].match(/:(.*?);/)[1],
-        bstr = atob(arr[1]),
-        n = bstr.length,
-        u8arr = new Uint8Array(n);
-      while (n--) {
-        u8arr[n] = bstr.charCodeAt(n);
-      }
-      return new File([u8arr], filename, { type: mime });
-    }
+    base64ToFile(urlData, fileName) {
+        let arr = urlData.split(',');
+        let mime = arr[0].match(/:(.*?);/)[1];
+        let bytes = atob(arr[1]); // 解码base64
+        let n = bytes.length
+        let ia = new Uint8Array(n);
+        while (n--) {
+            ia[n] = bytes.charCodeAt(n);
+        }
+        return new File([ia], fileName, { type: mime });
+    },
   }
 };
 </script>
