@@ -1,33 +1,35 @@
 <template>
   <div>
     <h3>文件上传</h3>
-  <van-uploader :after-read="fileup"/>
+    <van-uploader :after-read="fileup" />
   </div>
 </template>
 <script>
 export default {
-  name: 'uploaderfile',
-  data () {
+  name: "uploaderfile",
+  data() {
     return {
-      fileList: [],
-    }
+      fileList: []
+    };
   },
   methods: {
     fileup(file) {
       this.$axios.defaults.headers["Content-Type"] =
-          "application/x-www-form-urlencoded;charset=UTF-8";
-        var formdata = new FormData();
-        formdata.append(
-          "file",
-          // 处理文件
-          this.dataURLtoFile(file.content, this.fileName)
-        );
-        // 上传文件到API
-        this.$axios
-          .post("https://www.baidu.com", formdata)
-          .then(function(res) {
-            return res;
-          });
+        "application/x-www-form-urlencoded;charset=UTF-8";
+      this.$axios.defaults.headers["Authorization"] =
+        "Bearer 28390af2-768c-43de-9338-4f7537fb7741";
+      var formdata = new FormData();
+      formdata.append(
+        "file",
+        // 处理文件(处理为多文件上传)
+        this.dataURLtoFile(file.content, this.fileName)
+      );
+      // 上传文件到API
+      this.$axios
+        .post("http://bbs-api.test/api/upload", formdata)
+        .then(function(res) {
+          return res;
+        });
     },
     dataURLtoFile(dataurl, filename) {
       //将base64转换为文件
@@ -40,7 +42,7 @@ export default {
         u8arr[n] = bstr.charCodeAt(n);
       }
       return new File([u8arr], filename, { type: mime });
-    },
+    }
   }
-}
+};
 </script>
