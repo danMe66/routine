@@ -5,16 +5,14 @@ class iocA
     public $b;
     public $c;
 
-    public function A()
+    public function __construct($iocB, $iocC)
     {
-        //TODO
+        $this->b = $iocB;
+        $this->c = $iocC;
     }
 
     public function Method()
     {
-        $this->b = new iocB();
-        $this->c = new iocC();
-
         $this->b->Method();
         $this->c->Method();
     }
@@ -47,5 +45,5 @@ class iocC
     }
 }
 
-$a = new iocA();
+$a = new iocA(new iocB(), new iocC());
 $a->Method();
