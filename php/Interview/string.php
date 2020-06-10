@@ -29,8 +29,8 @@ var_dump(isset($e));//true
 var_dump('echo，print，print_r，var_dump的区别');
 $abc = 123;
 $arr = ['name' => 'dawson', 'age' => 12];
-echo $arr;
-print $arr;
-print_r($arr);
-var_dump($arr);
+echo 'echo 输出数组' . json_encode($arr) . "\n";
+print 'print 输出数组' . json_encode($arr) . "\n";
+print_r('print_r 输出数组' . json_encode($arr) . "\n");
+var_dump('var_dump 输出数组' . json_encode($arr) . "\n");
 #endregion
