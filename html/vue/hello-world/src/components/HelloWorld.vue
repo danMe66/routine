@@ -14,38 +14,40 @@ export default {
   },
   methods: {
     fileup(files) {
-      console.log(files);
-      this.$axios.defaults.headers["Content-Type"] =
-        "application/x-www-form-urlencoded;charset=UTF-8";
-      this.$axios.defaults.headers["Authorization"] =
-        "Bearer 28390af2-768c-43de-9338-4f7537fb7741";
-      var ldd = [];
-      for (let i = 0; i < files.length; i++) {
-        console.log(files[i]);
-        ldd.push = this.base64ToFile(files[i], files[i].file.name);
-      }
-      console.log('-------');
-      console.log(ldd);
       var formdata = new FormData();
-      formdata.append('file',ldd);
-      // 上传文件到API
-      this.$axios
-        .post("http://bbs-api.test/api/upload", formdata)
-        .then(function(res) {
-          return res;
-        });
-    },
-    base64ToFile(urlData, fileName) {
-        let arr = urlData.split(',');
-        let mime = arr[0].match(/:(.*?);/)[1];
-        let bytes = atob(arr[1]); // 解码base64
-        let n = bytes.length
-        let ia = new Uint8Array(n);
-        while (n--) {
-            ia[n] = bytes.charCodeAt(n);
+      if (files.length !== undefined) {
+        // todo 这个判断条件需要优化
+        for (let k = 0; k < files.length; k++) {
+          formdata.append(
+            "file[]",
+            // 处理文件(处理为多文件上传)
+            files[k].file
+          );
         }
-        return new File([ia], fileName, { type: mime });
-    },
+      } else {
+        formdata.append(
+          "file[]",
+          // 处理文件(处理为单文件上传)
+          files.file
+        );
+      }
+      this.$axios({
+        url: 'http://bbs-api.test/api/upload',
+        method: "post",
+        data: formdata,
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"
+        }
+      }).then(res => {
+        if (res.data.code == 200) {
+          var obj = res.data.data;
+          for (var i in obj) {
+            this.photoArr += obj[i] + ",";
+          }
+        }
+        console.log(res.data.code);
+      });
+    }
   }
 };
 </script>
