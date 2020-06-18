@@ -116,7 +116,7 @@ public class HelloWord {
 		}
 		// 新数组替换旧数组
 		arr3 = arr4;
-		System.out.println("删除数组 arr3 的第二个元素之后的数组为：" + Arrays.toString(arr3));
+		System.out.println("删除数组 arr3 的第二个元素之后的数组为：" + Arrays.toString(arr3)); 
 
 	}
 }
