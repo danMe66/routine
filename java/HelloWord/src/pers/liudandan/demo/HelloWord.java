@@ -118,5 +118,28 @@ public class HelloWord {
 		arr3 = arr4;
 		System.out.println("删除数组 arr3 的第二个元素之后的数组为：" + Arrays.toString(arr3)); 
 
+		// 模运算
+		double ab = 14;
+		double ac = 5;
+		System.out.println("14÷5为：" + ab / ac);
+		System.out.println("14÷5的取余为：" + ab % ac);
+		System.out.println("14÷5的取模为：" + Math.floorMod(14, 5));
+
+		int counts = 0;
+		for (int k = 0; k <= 100; k++)
+		{
+			counts += k * k;
+		}
+
+		System.err.println("1-100的平方和：" + counts);
+
+		for (int k = 0; k < 100; k++)
+		{
+			if (k % 3 == 0)
+			{
+				System.err.println("能被3整除的值为：" + k);
+			}
+		}
+
 	}
 }
