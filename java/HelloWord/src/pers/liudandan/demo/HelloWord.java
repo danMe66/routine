@@ -140,6 +140,7 @@ public class HelloWord {
 				System.err.println("能被3整除的值为：" + k);
 			}
 		}
+		System.out.println("--------------------------------分隔符--------------------------------");
 
 	}
 }
