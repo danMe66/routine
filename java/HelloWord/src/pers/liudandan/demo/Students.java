@@ -16,7 +16,16 @@ public class Students {
 
 	// sex属性
 	public boolean sex;
-	
+
 	// 属性也可以是类的一个对象
 	public StudentCards studenCards = new StudentCards();
+
+	public void show(int number)
+	{
+		System.out.println("报数到 "+number+" 停止");
+		for (int i = 0; i <= number; i++)
+		{
+			System.out.println("开始报数：" + i);
+		}
+	}
 }

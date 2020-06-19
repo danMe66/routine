@@ -7,6 +7,6 @@ package pers.liudandan.demo;
  *
  */
 public class StudentCards {
-	public String schooleNumber;
+	public int schooleNumber;
 	public String schooleName;
 }
