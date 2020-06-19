@@ -98,5 +98,9 @@ public class HelloShaoFa {
 		// 方法：就是算法
 		// 对象就数据和算法的一个整合体
 		// 给它所需的数据-》让他干活-》取出结果
+		System.out.println("--------------------------------读取私有属性--------------------------------");
+		Exampler exampler=new Exampler();
+		exampler.setNumber(12);
+		System.out.println("结果为:"+exampler.getNumber());
 	}
 }

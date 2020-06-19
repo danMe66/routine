@@ -32,5 +32,5 @@ public class Example {
 		System.out.println("您换取游戏币的数量为：" + cash);
 		this.money = 0;
 		System.out.println("当前余额：" + money);
-	}
+	}	
 }
