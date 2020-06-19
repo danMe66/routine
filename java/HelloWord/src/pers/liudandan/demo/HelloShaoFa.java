@@ -4,13 +4,11 @@ import java.util.Arrays;
 
 public class HelloShaoFa {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		int[] arr1 = { 1, 2, 3, 4, 5 };
 		int[] arr2 = arr1;
 		arr2[2] = 11;
-		for (int i = 0; i < arr2.length; i++)
-		{
+		for (int i = 0; i < arr2.length; i++) {
 			System.out.println("arr1的元素分别为：" + arr1[i]);
 		}
 		System.out.println("--------------------------------分隔符--------------------------------");
@@ -43,10 +41,8 @@ public class HelloShaoFa {
 
 		int[] arr5 = { 1, 3, 5, 79, 55 };
 		int results = 0;
-		for (int i = 0; i < arr5.length; i++)
-		{
-			if (arr5[i] > results)
-			{
+		for (int i = 0; i < arr5.length; i++) {
+			if (arr5[i] > results) {
 				results = arr5[i];
 			}
 		}
@@ -57,5 +53,50 @@ public class HelloShaoFa {
 		myMatch.getMax(arr5);
 		int results1 = myMatch.getMax2(arr5);
 		System.out.println("getMax2的返回值为：" + results1);
+
+		// 找出能被8整除的数
+		int[] arr6 = { 12, 16, 21, 24, 64 };
+		int[] finRes = myMatch.find8(arr6);
+		System.out.println("被8整除的数为：" + Arrays.toString(finRes));
+
+		System.out.println("--------------------------------Java类的方法重载（overload）--------------------------------");
+		// 调用的时候，编译器会根据参数列表来匹配不同的方法
+		myMatch.test();
+		myMatch.test(12);
+		myMatch.test(12, 13);
+
+		System.out.println("--------------------------------Java类对象--------------------------------");
+
+		Screen screen = new Screen();
+		screen.width = 12;
+		screen.heigth = 3;
+		int p = screen.pixel(screen.width, screen.heigth);
+		System.out.println("第一种求像素的方法，结果为：" + p);
+
+		int p1 = screen.pixel1(screen);
+		System.out.println("第二种求像素的方法，结果为：" + p1);
+
+		int p2 = screen.pixel2();
+		System.out.println("第三种求像素的方法，结果为：" + p2);
+
+		Example example = new Example();
+		example.show();
+		example.show1();
+
+		System.out.println("--------------------------------demo1--------------------------------");
+		int a = 10;
+		int b = 20;
+		int c = 50;
+		example.insertCash(a);// 第一次充值
+		example.insertCash(b);// 第二次充值
+		example.insertCash(c);// 第三次充值
+		System.out.println("充值完成，提取游戏币");
+		example.exchange();
+		System.out.println("--------------------------------demo2--------------------------------");
+		// 笔记：对象=属性+方法
+		// 属性：就是数据
+		// 方法：就是算法
+		// 对象就数据和算法的一个整合体
+		// 给它所需的数据-》让他干活-》取出结果
 	}
 }
