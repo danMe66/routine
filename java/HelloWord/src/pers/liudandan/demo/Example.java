@@ -32,5 +32,16 @@ public class Example {
 		System.out.println("您换取游戏币的数量为：" + cash);
 		this.money = 0;
 		System.out.println("当前余额：" + money);
-	}	
+	}
+
+	/**
+	 * 单元测试
+	 */
+	public static void main(String[] args) {
+		Example example =new Example();
+		example.insertCash(10);
+		example.insertCash(20);
+		example.insertCash(50);
+		System.out.println("测试完毕");
+	}
 }

@@ -1,5 +1,7 @@
 package pers.liudandan.demo;
 
+import org.jsoup.select.Evaluator.Id;
+
 /**
  * Student 类
  * 
@@ -17,15 +19,24 @@ public class Students {
 	// sex属性
 	public boolean sex;
 
+//	public Students(String name, int age, boolean sex) {
+//		this.name = name;
+//		this.age = age;
+//		this.sex = sex;
+//	}
+
 	// 属性也可以是类的一个对象
 	public StudentCards studenCards = new StudentCards();
 
-	public void show(int number)
-	{
-		System.out.println("报数到 "+number+" 停止");
-		for (int i = 0; i <= number; i++)
-		{
+	public void show(int number) {
+		System.out.println("报数到 " + number + " 停止");
+		for (int i = 0; i <= number; i++) {
 			System.out.println("开始报数：" + i);
 		}
+	}
+
+	public String toString() {
+		String s = "姓名：" + name + "年龄：" + age + "性别:" + sex;
+		return s;
 	}
 }
