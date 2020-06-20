@@ -4,11 +4,13 @@ import java.util.Arrays;
 
 public class HelloShaoFa {
 
-	public static void main(String[] args) {
+	public static void main(String[] args)
+	{
 		int[] arr1 = { 1, 2, 3, 4, 5 };
 		int[] arr2 = arr1;
 		arr2[2] = 11;
-		for (int i = 0; i < arr2.length; i++) {
+		for (int i = 0; i < arr2.length; i++)
+		{
 			System.out.println("arr1的元素分别为：" + arr1[i]);
 		}
 		System.out.println("--------------------------------分隔符--------------------------------");
@@ -41,8 +43,10 @@ public class HelloShaoFa {
 
 		int[] arr5 = { 1, 3, 5, 79, 55 };
 		int results = 0;
-		for (int i = 0; i < arr5.length; i++) {
-			if (arr5[i] > results) {
+		for (int i = 0; i < arr5.length; i++)
+		{
+			if (arr5[i] > results)
+			{
 				results = arr5[i];
 			}
 		}
@@ -99,8 +103,48 @@ public class HelloShaoFa {
 		// 对象就数据和算法的一个整合体
 		// 给它所需的数据-》让他干活-》取出结果
 		System.out.println("--------------------------------读取私有属性--------------------------------");
-		Exampler exampler=new Exampler();
+		Exampler exampler = new Exampler();
 		exampler.setNumber(12);
-		System.out.println("结果为:"+exampler.getNumber());
+		System.out.println("结果为:" + exampler.getNumber());
+		System.out.println("--------------------------------类的构造方法--------------------------------");
+		GouZao gouZao = new GouZao("小明", 18, true);
+		System.out.println("输出:name" + gouZao.name + " age:" + gouZao.age + " sex:" + gouZao.sex);
+		// 构造方法在创建时被调用
+		// 构造方法是常用方法，一般的类都应该加一个构造方法
+
+		System.out.println("--------------------------------对象的销毁--------------------------------");
+		// 只需要创建，不需要销毁，因为Java自己会做垃圾回收
+		// GC 垃圾回收机制，回收的不是垃圾，而是不再被使用的对象
+
+		System.out.println("--------------------------------类的继承--------------------------------");
+		// 父类
+		MyFile myFile = new MyFile();
+		myFile.name = "abc.mp4";
+		myFile.size = 1000;
+		myFile.info();
+		// 子类
+		MyVideoFile myVideoFile = new MyVideoFile();
+		myVideoFile.name = "父文件";
+		myVideoFile.size = 1000;
+		myVideoFile.duration = 12000;
+		myVideoFile.info();
+		myVideoFile.play();
+		myVideoFile.stop();
+		myVideoFile.duration = 100000;
+		// 父类的public属性，方法，在子类中自动继承得到
+
+		System.out.println("--------------------------------重写（override）--------------------------------");
+		// 重写是针对普通的方法（函数），构造方法不能叫重写
+		// 在创建子类对象是，父类的构造方法会被自动调用
+
+		System.out.println("--------------------------------构造方法的继承--------------------------------");
+
+		Child child = new Child();
+		System.out.println("EXIT");
+
+		System.out.println("--------------------------------单根继承--------------------------------");
+		// A->B->C->D(A继承B，B继承C，C继承D)
+	    // 如果一个类没有指定父类，则它默认父类就是Object
+		
 	}
 }

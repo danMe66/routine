@@ -11,7 +11,10 @@ public class GouZao {
 	public boolean sex;
 
 	// 构造方法
-	public GouZao(String name,int age,boolean sex) {
-		
+	public GouZao(String name, int age, boolean sex)
+	{
+		this.name = name;
+		this.age = age;
+		this.sex = sex;
 	}
 }
