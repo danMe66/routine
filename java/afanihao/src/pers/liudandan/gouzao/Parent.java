@@ -1,4 +1,4 @@
-package pers.liudandan.demo.gouzao;
+package pers.liudandan.gouzao;
 
 public class Parent {
 	private int a;

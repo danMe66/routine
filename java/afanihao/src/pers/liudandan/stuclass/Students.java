@@ -1,4 +1,4 @@
-package pers.liudandan.demo.stuclass;
+package pers.liudandan.stuclass;
 
 /**
  * Student 类

@@ -1,4 +1,4 @@
-package pers.liudandan.demo.polymorphic;
+package pers.liudandan.polymorphic;
 
 public class ApplePie extends Pie {
 	public String kouwei = "苹果味";

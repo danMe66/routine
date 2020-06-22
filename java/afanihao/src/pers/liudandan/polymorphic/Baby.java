@@ -1,4 +1,4 @@
-package pers.liudandan.demo.polymorphic;
+package pers.liudandan.polymorphic;
 
 public class Baby {
 	public void eat(Pie pie) {

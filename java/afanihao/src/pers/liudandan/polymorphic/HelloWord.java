@@ -1,4 +1,4 @@
-package pers.liudandan.demo.polymorphic;
+package pers.liudandan.polymorphic;
 
 import java.util.Arrays;
 

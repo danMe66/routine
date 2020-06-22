@@ -1,4 +1,4 @@
-package pers.liudandan.demo.container;
+package pers.liudandan.container;
 
 public class MonkeyList {
 	private Monkey heade = new Monkey(0, "石猴");

@@ -1,4 +1,4 @@
-package pers.liudandan.demo.container;
+package pers.liudandan.container;
 
 public class Student {
 	// 类student的name属性

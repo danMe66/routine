@@ -1,4 +1,4 @@
-package pers.liudandan.demo;
+package pers.liudandan;
 
 import java.util.Arrays;
 
