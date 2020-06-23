@@ -1,6 +1,6 @@
 package my.innerclass;
 
-import pers.liudandan.interfaceclass.VideoPlay;
+import my.interfaceclass.VideoPlay;
 
 /**
  * 内部类和外部类
