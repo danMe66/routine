@@ -4,15 +4,20 @@ import java.util.List;
 import java.util.Date;
 import java.util.Map;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
+@PropertySource(value = { "classpath:person.properties" })
 @Component
 @ConfigurationProperties(prefix = "person")
 public class person {
 
+//	@Value("${person.last-name}")
 	private String lastName;
-
+//
+//	@Value("#{11*2}")
 	private Integer age;
 
 	private Boolean boss;
