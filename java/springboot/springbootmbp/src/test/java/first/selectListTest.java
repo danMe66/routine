@@ -147,7 +147,7 @@ public class selectListTest {
 
 //	@Test
 //	public void selectByWrapper() {
-//		// 1:名字中包含雨并且年龄小于40(name like '%雨%' and age<40)
+//		// 10:名字中包含雨并且年龄小于40(name like '%雨%' and age<40)
 //		QueryWrapper<User> queryWrapper = new QueryWrapper<User>();
 ////		queryWrapper.like("name", "雨").lt("age", 40);
 ////		queryWrapper.select("name","age").like("name", "雨").lt("age", 40);//查询指定字段
@@ -192,8 +192,9 @@ public class selectListTest {
 //	@Test
 //	public void selectByWrapperMaps() {// 返回泛型map，可以去除字段值为null的参数
 //		QueryWrapper<User> queryWrapper = new QueryWrapper<User>();
-//		queryWrapper.select("name", "age").like("name", "雨").lt("age", 40);// 查询指定字段不包含值为null的
-//		List<Map<String, Object>> userlist = userMapper.selectMaps(queryWrapper);
+//      查询指定的字段【select("name", "age")】
+//		queryWrapper.select("name", "age").like("name", "雨").lt("age", 40);
+//		List<Map<String, Object>> userlist = userMapper.selectMaps(queryWrapper);// 查询指定字段不包含值为null的
 //		userlist.forEach(System.out::println);
 //	}
 
@@ -219,14 +220,22 @@ public class selectListTest {
 //		System.out.println("总条数：" + counts);
 //	}
 
-	@Test
-	public void selectLambda() {// Lambda方式
-//		LambdaQueryWrapper<User> lambdaQueryWrapper = new QueryWrapper<User>().lambda();
-//		LambdaQueryWrapper<User> lambdaQueryWrapper2 = new LambdaQueryWrapper<User>();
-		LambdaQueryWrapper<User> lambdaQuery = Wrappers.<User>lambdaQuery();
-		lambdaQuery.like(User::getName, "雨");
-//		List<User> userlist = userMapper.selectList(lambdaQuery);
-		List<Map<String, Object>> userlist = userMapper.selectMaps(lambdaQuery);// 查询指定字段不包含值为null的
-		userlist.forEach(System.out::println);
-	}
+	// @Test
+	// public void selectOne() {
+	// 	QueryWrapper<User> queryWrapper = new QueryWrapper<User>();
+	// 	queryWrapper.like("name", "liu");
+	// 	User user = userMapper.selectOne(queryWrapper);
+	// 	System.out.println("用户：" + user);
+	// }
+
+//	@Test
+//	public void selectLambda() {// Lambda方式
+////		LambdaQueryWrapper<User> lambdaQueryWrapper = new QueryWrapper<User>().lambda();
+////		LambdaQueryWrapper<User> lambdaQueryWrapper2 = new LambdaQueryWrapper<User>();
+//		LambdaQueryWrapper<User> lambdaQuery = Wrappers.<User>lambdaQuery();
+//		lambdaQuery.like(User::getName, "雨");
+////		List<User> userlist = userMapper.selectList(lambdaQuery);
+//		List<Map<String, Object>> userlist = userMapper.selectMaps(lambdaQuery);// 查询指定字段不包含值为null的
+//		userlist.forEach(System.out::println);
+//	}
 }
