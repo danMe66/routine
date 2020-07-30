@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+客户端页面
+<script>
+
+    var wsServer = 'ws://127.0.0.1:9502';
+    var websocket = new WebSocket(wsServer);
+    websocket.onopen = function (evt) {
+        console.log("WebSocket 连接成功！");
+    };
+
+    websocket.onclose = function (evt) {
+        console.log("WebSocket 连接关闭！");
+    };
+
+    websocket.onmessage = function (evt) {
+        console.log('接收到消息内容: ' + evt.data);
+    };
+
+    websocket.onerror = function (evt, e) {
+        console.log('连接出现错误: ' + evt.data);
+    };
+
+</script>
+</body>
+</html>
