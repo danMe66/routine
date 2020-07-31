@@ -27,7 +27,7 @@ echo 我是宿主机 > index.html
 
 这样，访问宿主机的 IP就会出现
 
-![image-20200728205241967](/Users/liudandan/Library/Application Support/typora-user-images/image-20200728205241967.png) 
+![image-20200731113347167](https://liudandandear.gitee.io/image/image-20200731113347167.png)
 
 ## 使用 Docker 安装容器1
 
