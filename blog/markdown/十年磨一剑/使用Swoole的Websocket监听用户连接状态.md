@@ -4,7 +4,7 @@
 
 > Swoole：PHP 协成框架
 >
-> Swoole  使 PHP 开发人员可以编写高性能的高并发的 TCP、UDP、Unix Socket、HTTP、 WebSocket 等服务，让 PHP不在局限于 Web 领域。
+> Swoole  使 PHP 开发人员可以编写高性能的高并发的 TCP、UDP、Unix Socket、HTTP、 WebSocket 等服务，让 PHP 不在局限于 Web 领域。
 >
 > Swoole4 协程的成熟将 PHP 带入了前所未有的时期， 为性能的提升提供了独一无二的可能性。Swoole 可以广泛应用于互联网、移动通信、云计算、 网络游戏、物联网（IOT）、车联网、智能家居等领域。使用 PHP + Swoole 可以使企业 IT 研发团队的效率大大提升，更加专注于开发创新产品。
 >
@@ -18,6 +18,7 @@
 <?php
 $ws = new Swoole\WebSocket\Server("0.0.0.0", 9502);
 
+//监听WebSocket客户端连接打开事件
 $ws->on('open', function ($ws, $request) {
     $ws->push($request->fd, "连接成功");
     echo "客户端：$request->fd 连接成功\n";
@@ -41,7 +42,7 @@ $ws->start();
 
 ### 第一步
 
-创建websocket服务器对象，监听0.0.0.0:9502端口
+创建 websocket 服务器对象，监听 0.0.0.0:9502 端口
 
 ```php
 $ws = new Swoole\WebSocket\Server("0.0.0.0", 9502);
@@ -49,7 +50,7 @@ $ws = new Swoole\WebSocket\Server("0.0.0.0", 9502);
 
 ### 第二步
 
-监听WebSocket客户端连接打开事件
+监听 WebSocke t客户端连接打开事件
 
 ```php
 $ws->on('open', function ($ws, $request) {
@@ -60,7 +61,7 @@ $ws->on('open', function ($ws, $request) {
 
 ### 第三步
 
-监听WebSocket客户端消息事件
+监听 WebSocket 客户端消息事件
 
 ```php
 $ws->on('message', function ($ws, $frame) {
@@ -70,7 +71,7 @@ $ws->on('message', function ($ws, $frame) {
 
 ### 第四步
 
-监听WebSocket客户端连接关闭事件
+监听 WebSocket 客户端连接关闭事件
 
 ```php
 $ws->on('close', function ($ws, $fd) {
@@ -80,7 +81,7 @@ $ws->on('close', function ($ws, $fd) {
 
 ### 第五步
 
-启动WebSocket 服务
+启动 WebSocket 服务
 
 ```php
 $ws->start();
