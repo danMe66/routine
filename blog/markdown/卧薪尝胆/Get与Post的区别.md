@@ -38,3 +38,9 @@ GET一般用于获取/查询资源信息，而  POST 一般用于更新资源信
 8. GET比POST更不安全，因为参数直接暴露在URL上，所以不能用来传递敏感信息。
 9. GET参数通过URL传递，POST放在Request body中。
 10. 大多数浏览器通常都会限制url长度在2K个字节，而大多数服务器最多处理64K大小的url。
+
+
+
+
+
+​                                                                                                                                                                   **<u>[<<点击返回主页](https://liudandandear.gitee.io)</u>**

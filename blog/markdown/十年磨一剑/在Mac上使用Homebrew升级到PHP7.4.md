@@ -142,3 +142,7 @@ pecl install imagick
 最后，您应该测试和升级项目以实现[PHP 7.4兼容性](https://stitcher.io/blog/new-in-php-74)。
 
 > **本文摘录自：**[**https://stitcher.io/blog/php-74-upgrade-mac**](https://stitcher.io/blog/php-74-upgrade-mac)
+
+
+
+​                                                                                                                                                                   **<u>[<<点击返回主页](https://liudandandear.gitee.io)</u>**

@@ -35,3 +35,9 @@ request_slowlog_timeout = 5s
 ```
 
 意思是当某个请求时间超过了5秒，就写进慢日志，注意是5s，别忘了单位。其他单位还有m分，h时，php-fpm会记录对应的进程号，脚本名称，具体执行慢的代码行好等。
+
+
+
+
+
+​                                                                                                                                                                    **<u>[<<点击返回主页](https://liudandandear.gitee.io)</u>**

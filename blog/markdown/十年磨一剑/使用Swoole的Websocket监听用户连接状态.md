@@ -1,4 +1,4 @@
-# 使用Swoole的Websocket监听用户连接状态
+# 使用Swoole的Websocket监听用户连接状态              
 
 ## 什么是 Swoole？
 
@@ -188,3 +188,7 @@ php wsServer.php
 #### 关闭客户单页面 wsServer.html，服务端结果
 
 ![image-20200730145805852](https://liudandandear.gitee.io/image/image-20200730145805852.png)
+
+
+
+​                                                                                                                                                                   **<u>[<<点击返回主页](https://liudandandear.gitee.io)</u>**

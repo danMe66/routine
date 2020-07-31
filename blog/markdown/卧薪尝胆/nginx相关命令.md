@@ -90,3 +90,9 @@ ps -C nginx -o pid
 ```
 lsof -i:80
 ```
+
+
+
+
+
+​                                                                                                                                                                   **<u>[<<点击返回主页](https://liudandandear.gitee.io)</u>**

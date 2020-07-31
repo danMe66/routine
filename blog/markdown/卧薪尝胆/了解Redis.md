@@ -34,3 +34,9 @@ set key value ex 60
 // 查询key还有多久过期
 ttl key
 ```
+
+
+
+
+
+​                                                                                                                                                                   **<u>[<<点击返回主页](https://liudandandear.gitee.io)</u>**
