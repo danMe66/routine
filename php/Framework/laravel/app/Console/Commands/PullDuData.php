@@ -39,7 +39,7 @@ class PullDuData extends Command
     public function handle()
     {
         $this->info("—————————————— start ——————————————");
-        $path = storage_path() . '/json/1/app.poizon.com/api/v1/h5/commodity/fire/';
+        $path = storage_path() . '/json/2/app.poizon.com/api/v1/h5/commodity/fire/';
         if (!is_dir($path)) {
             $this->error("文件目录不正确！请检查重试！！！");
             return;
@@ -59,8 +59,10 @@ class PullDuData extends Command
      */
     public function scanFile($path)
     {
-        $spuId = 27741;
-        $spuName = 'Champion 草写 印花 短袖T恤 美版 黑色';
+//        $spuId = 23609;
+//        $spuName = 'THE NORTH FACE Men is 1996 Retro Nuptse Jacket 拼接立领羽绒服 美版 男款 黑色';
+        $spuId = 27027;
+        $spuName = 'Champion 纯棉宽松系带短裤 黑色';
         $this->info("开始读取目录文件！！！");
         global $result;
         $files = scandir($path);

@@ -1,0 +1,33 @@
+
+
+
+首先 ，myisam 和 innodb 都是用的 b+tree 索引结构。
+
+
+
+
+因为该主键索引的叶子节点存放的是整行数据。
+
+从而导致 select * from demo order by  id 能够使用到索引。
+
+而这种情况只是针对于innodb的主键索引（聚集索引）。
+
+
+
+当在name字段上创建一个普通索引的时候。那么又建立了一个b+tree树。
+
+而这个叶子节点上存放的只是索引对应的值和主键id。
+
+从而在这个基础上select * from demo order by name；是用不到索引 
+
+因为该节点上没有那么多字段（*），只有 索引列对应的值 和 id.
+
+相同的:
+
+myisam 虽然和innodb 不一样。 但是最起码也是用的b+tree结构
+
+所以，它也是只能查索引列，如果查了全部（*）就会先去查数据 在排序。
+
+如 : select * from demo order by id; 用不到索引 是因为它叶子节点上只有数据的物理空间。不是像innodb一样 对应着整行数据。
+
+     select name from demo order by name；用到索引。因为name有索引，而查询的也只是name列。
