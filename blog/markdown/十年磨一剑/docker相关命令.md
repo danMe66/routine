@@ -1,6 +1,6 @@
 # docker相关命令
 
-产看 docker 的所有命令
+查看 docker 的所有命令
 
 ```shell
 docker
@@ -112,7 +112,11 @@ docker import http://example.com/exampleimage.tgz example/imagerepo
 docker rm -f 容器id
 ```
 
+强制删除无法删除的容器
 
+```shell
+docker rmi -f 容器id
+```
 
 
 
