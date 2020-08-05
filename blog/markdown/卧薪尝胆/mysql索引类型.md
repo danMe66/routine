@@ -199,3 +199,9 @@ SELECT * FROM users where adddate < '2007-01-01'
 MySQL 只对以下操作符才使用索引：
 
 <、<=、=、>、>=、between、in，以及某些时候的 like（不以通配符%或_开头的情形）。而理论上每张表里面最多可创建16个索引，不过除非数据是真的多，否则过多使用索引也不行。
+
+
+
+
+
+ **<u>[<<点击返回主页](https://liudandandear.gitee.io)</u>**
