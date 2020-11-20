@@ -9,23 +9,23 @@ import lombok.Data;
 @Data // 编译的时候自动加上get、set方法
 public class User {
 
-	// 主键
-	private Long id;
+    // 主键
+    private Long id;
 
-	// 姓名
-	private String name;
+    // 姓名
+    private String name;
 
-	// 年龄
-	private Integer age;
+    // 年龄
+    private Integer age;
 
-	// 邮件
-	private String email;
+    // 邮件
+    private String email;
 
-	// 直属上级
-	private Long managerId;
+    // 直属上级
+    private Long managerId;
 
-	// 创建时间
-	private LocalDateTime createTime;
+    // 创建时间
+    private LocalDateTime createTime;
 
 //	// ①transient标识该参数不参与序列化过程
 //	private transient String remark;
@@ -41,6 +41,6 @@ public class User {
 //		User.remark = remark;
 //	}
 
-	@TableField(exist = false)
-	private String remark;
+    @TableField(exist = false)
+    private String remark;
 }

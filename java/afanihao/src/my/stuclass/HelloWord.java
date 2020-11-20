@@ -2,23 +2,23 @@ package my.stuclass;
 
 public class HelloWord {
 
-	public static void main(String[] args) {
-		System.out.println("--------------------------------Java的类和属性--------------------------------");
-		Students students = new Students();
-		students.name = "小马";
-		students.age = 18;
-		students.sex = true;
-		System.out.println(students.name);
-		System.out.println(students.age);
-		System.out.println(students.age);
+    public static void main(String[] args) {
+        System.out.println("--------------------------------Java的类和属性--------------------------------");
+        Students students = new Students();
+        students.name = "小马";
+        students.age = 18;
+        students.sex = true;
+        System.out.println(students.name);
+        System.out.println(students.age);
+        System.out.println(students.age);
 
-		Students s1 = new Students();
-		s1.name = "hi";
-		System.out.println("s1.name的值为：" + s1.name);
-		Students s2 = s1;
-		s2.name = "hello";// 此处修改了s2的name值，那么s2的name属性值也会是修改之后的值，因为他们是同一个对象
-		System.out.println("s2.name的值为：" + s2.name);
-		System.out.println("s1.name的值为：" + s1.name);
+        Students s1 = new Students();
+        s1.name = "hi";
+        System.out.println("s1.name的值为：" + s1.name);
+        Students s2 = s1;
+        s2.name = "hello";// 此处修改了s2的name值，那么s2的name属性值也会是修改之后的值，因为他们是同一个对象
+        System.out.println("s2.name的值为：" + s2.name);
+        System.out.println("s1.name的值为：" + s1.name);
 
 //		students.studenCards.schooleNumber = 1;
 //		students.studenCards.schooleName = "二中";
@@ -38,10 +38,10 @@ public class HelloWord {
 //		// 2：插入和删除困难：在插入一个对象的代价很大，需要挪动现有的对象位置
 //
 //
-		System.out.println("--------------------------------Java类的方法调用、返回值--------------------------------");
-		Students s3 = new Students();
-		// 调用方法（c++里边叫函数，java里边叫方法）
-		s3.show(4);
+        System.out.println("--------------------------------Java类的方法调用、返回值--------------------------------");
+        Students s3 = new Students();
+        // 调用方法（c++里边叫函数，java里边叫方法）
+        s3.show(4);
 //		
 //		System.err.println("-------------------------------- 关于 toString --------------------------------");
 //		Students students2 = new Students();
@@ -53,5 +53,5 @@ public class HelloWord {
 //		// 如果一个类没有重写toString(),则使用Object的默认实现
 //		// 如果类中没有toString()方法，Objetct.toString()默认格式为【类名@对象地址】
 //		// toString()的作用：将一个对象转化成字符串。在字符串拼接时、单步调试观察时，会被自动调用。
-	}
+    }
 }

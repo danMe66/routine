@@ -5,29 +5,29 @@ import javax.swing.JFrame;
 
 /**
  * 按钮点击处理
- * @author mini
  *
+ * @author mini
  */
 public class SwingDemo {
 
-	private static void createGUI() {
+    private static void createGUI() {
 
-		MyFrame frame = new MyFrame("显示时间");
+        MyFrame frame = new MyFrame("显示时间");
 
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-		frame.setSize(400, 300);
+        frame.setSize(400, 300);
 
-		frame.setVisible(true);
+        frame.setVisible(true);
 
-	}
+    }
 
-	public static void main(String[] args) {
-		javax.swing.SwingUtilities.invokeLater(new Runnable() {
-			public void run() {
-				createGUI();
-			}
-		});
+    public static void main(String[] args) {
+        javax.swing.SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                createGUI();
+            }
+        });
 
-	}
+    }
 }

@@ -15,18 +15,18 @@ import first.entity.User;
 @SpringBootTest
 public class InsertTest {
 
-	@Autowired
-	private UserMapper userMapper;
+    @Autowired
+    private UserMapper userMapper;
 
-	@Test
-	public void insert() {
-		User user = new User();
-		user.setName("liu");
-		user.setAge(12);
-		user.setManagerId(1087982257332887553L);
-		user.setCreateTime(LocalDateTime.now());
-		int rows = userMapper.insert(user);
-		System.out.println("影响记录数：" + rows);
+    @Test
+    public void insert() {
+        User user = new User();
+        user.setName("liu");
+        user.setAge(12);
+        user.setManagerId(1087982257332887553L);
+        user.setCreateTime(LocalDateTime.now());
+        int rows = userMapper.insert(user);
+        System.out.println("影响记录数：" + rows);
 
-	}
+    }
 }

@@ -16,15 +16,15 @@ import first.entity.User;
 @SpringBootTest
 public class SimpleTest {
 
-	@Autowired
-	private UserMapper userMapper;
+    @Autowired
+    private UserMapper userMapper;
 
-	@Test
-	public void select() {
-		List<User> list = userMapper.selectList(null);
-		Assert.assertEquals(5, list.size());
-		System.err.println("------开始打印------");
-		list.forEach(System.out::println);
-		System.err.println("------打印结束------");
-	}
+    @Test
+    public void select() {
+        List<User> list = userMapper.selectList(null);
+        Assert.assertEquals(5, list.size());
+        System.err.println("------开始打印------");
+        list.forEach(System.out::println);
+        System.err.println("------打印结束------");
+    }
 }

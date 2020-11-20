@@ -16,6 +16,7 @@ a:active, a:hover { outline: 0px; }
 .for-image #write { padding-left: 8px; padding-right: 8px; }
 body.typora-export { padding-left: 30px; padding-right: 30px; }
 .typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
 @media screen and (max-width: 500px) { 
   body.typora-export { padding-left: 0px; padding-right: 0px; }
   #write { padding-left: 20px; padding-right: 20px; }
@@ -86,7 +87,7 @@ blockquote > :first-child, li > :first-child { margin-top: 0px; }
   #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
   .typora-export * { -webkit-print-color-adjust: exact; }
   html.blink-to-pdf { font-size: 13px; }
-  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid; }
+  .typora-export #write { break-after: avoid; }
   .typora-export #write::after { height: 0px; }
   .is-mac table { break-inside: avoid; }
 }
@@ -153,6 +154,9 @@ svg[id^="mermaidChart"] { line-height: 1em; }
 mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
 .md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
 mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+@media print { 
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
 
 
 /* Flowchart variables */
@@ -1833,11 +1837,17 @@ footer.ty-footer {
     color: white;
 }
 
+.export-detail,
+.export-item.active,
+.export-items-list-control {
+    background: #d6d6d4
+}
+
 
 </style>
 </head>
-<body class='typora-export' >
-<div  id='write'  class = ''><h1><a name="myisam和innodb的区别" class="md-header-anchor"></a><span>MyISAM和InnoDB的区别</span></h1><p><span>MyISAM 强调的是性能，查询速度快，支持表锁，支持全文索引，并发较小，不支持事务型操作，不支持外键，崩溃后不可自动恢复</span>
+<body class='typora-export'>
+<div id='write'  class=''><h1><a name="myisam和innodb的区别" class="md-header-anchor"></a><span>MyISAM和InnoDB的区别</span></h1><p><span>MyISAM 强调的是性能，查询速度快，支持表锁，支持全文索引，并发较小，不支持事务型操作，不支持外键，崩溃后不可自动恢复</span>
 <span>InnoDB 适合频繁修改以及设计安全性较高的应用，支持行锁，不支持全文索引，并发较大，支持事务型操作，支持外键，奔溃可恢复</span>
 <span>对于 </span><code>select count(*) from table</code><span> 语句，MyISAM 比 InnoDB 快，因为 MyISAM 直接会保存表行数，在查询的时候直接取出，但是InnoDB 会遍历整个表来计算行</span>
 <span>对于加了where条件，</span><code>select count(*) from table where 条件</code><span>，两者都会进行遍历计算行数。</span></p><p>&nbsp;</p><p>&nbsp;</p><p><span> </span><strong><u><a href='https://liudandandear.gitee.io'><span>&lt;&lt;点击返回主页</span></a></u></strong></p></div>

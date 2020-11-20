@@ -1,23 +1,20 @@
 package my.gouzao;
 
 public class Parent {
-	private int a;
+    private int a;
 
-	public Parent()
-	{
-		System.out.println("父类的构造方法输出");
-	}
+    public Parent() {
+        System.out.println("父类的构造方法输出");
+    }
 
-	public Parent(int a)
-	{
-		this.a = a;
-		System.out.println("父类的构造方法输出" + this.a);
-	}
+    public Parent(int a) {
+        this.a = a;
+        System.out.println("父类的构造方法输出" + this.a);
+    }
 
-	@Override
-	public String toString()
-	{
-		// TODO Auto-generated method stub
-		return super.toString();
-	}
+    @Override
+    public String toString() {
+        // TODO Auto-generated method stub
+        return super.toString();
+    }
 }

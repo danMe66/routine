@@ -13,21 +13,21 @@ import javax.swing.JLabel;
 
 public class MyFrame extends JFrame {
 
-	private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
-	JLabel jLabel = new JLabel("00:00:00");
-	JButton jButton = new JButton("显示时间");
+    JLabel jLabel = new JLabel("00:00:00");
+    JButton jButton = new JButton("显示时间");
 
-	public MyFrame(String title) {
-		super(title);
-		// 添加控件
-		// 内容面板
-		Container container = getContentPane();
-		container.setLayout(new FlowLayout());
+    public MyFrame(String title) {
+        super(title);
+        // 添加控件
+        // 内容面板
+        Container container = getContentPane();
+        container.setLayout(new FlowLayout());
 
-		// 向内容面板添加控件
-		container.add(jLabel);
-		container.add(jButton);
+        // 向内容面板添加控件
+        container.add(jLabel);
+        container.add(jButton);
 
 //		// 创建监听器对象
 //		ActionListener myButtenListener = new ActionListener() {
@@ -49,16 +49,16 @@ public class MyFrame extends JFrame {
 //			}
 //		});
 
-		// lambda表达式
-		jButton.addActionListener((e) -> {
-			System.out.println("按钮被点击");
-			showtime();
-		});
-	}
+        // lambda表达式
+        jButton.addActionListener((e) -> {
+            System.out.println("按钮被点击");
+            showtime();
+        });
+    }
 
-	public void showtime() {
-		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH:mm:ss");
-		String time = simpleDateFormat.format(new Date());
-		jLabel.setText(time);
-	}
+    public void showtime() {
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH:mm:ss");
+        String time = simpleDateFormat.format(new Date());
+        jLabel.setText(time);
+    }
 }

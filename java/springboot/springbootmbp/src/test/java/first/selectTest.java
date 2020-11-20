@@ -13,14 +13,14 @@ import first.entity.User;
 @SpringBootTest
 public class selectTest {
 
-	@Autowired
-	private UserMapper userMapper;
+    @Autowired
+    private UserMapper userMapper;
 
-	@Test
-	public void select() {
-		// 查询单条信息
-		User user = userMapper.selectById(1094590409767661570L);
-		System.err.println("查询结果：" + user);
+    @Test
+    public void select() {
+        // 查询单条信息
+        User user = userMapper.selectById(1094590409767661570L);
+        System.err.println("查询结果：" + user);
 
-	}
+    }
 }

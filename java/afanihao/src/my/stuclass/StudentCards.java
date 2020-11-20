@@ -2,11 +2,10 @@ package my.stuclass;
 
 /**
  * StudenCards 类
- * 
- * @author mini
  *
+ * @author mini
  */
 public class StudentCards {
-	public int schooleNumber;
-	public String schooleName;
+    public int schooleNumber;
+    public String schooleName;
 }

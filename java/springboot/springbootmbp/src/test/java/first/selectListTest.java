@@ -26,8 +26,8 @@ import first.entity.User;
 @SpringBootTest
 public class selectListTest {
 
-	@Autowired
-	private UserMapper userMapper;
+    @Autowired
+    private UserMapper userMapper;
 
 //	@Test
 //	public void selectList() {
@@ -220,13 +220,13 @@ public class selectListTest {
 //		System.out.println("总条数：" + counts);
 //	}
 
-	// @Test
-	// public void selectOne() {
-	// 	QueryWrapper<User> queryWrapper = new QueryWrapper<User>();
-	// 	queryWrapper.like("name", "liu");
-	// 	User user = userMapper.selectOne(queryWrapper);
-	// 	System.out.println("用户：" + user);
-	// }
+    // @Test
+    // public void selectOne() {
+    // 	QueryWrapper<User> queryWrapper = new QueryWrapper<User>();
+    // 	queryWrapper.like("name", "liu");
+    // 	User user = userMapper.selectOne(queryWrapper);
+    // 	System.out.println("用户：" + user);
+    // }
 
 //	@Test
 //	public void selectLambda() {// Lambda方式

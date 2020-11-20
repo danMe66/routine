@@ -2,8 +2,8 @@
 <html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<title>目录</title><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: 'Lucida Console',Consolas,'Courier',monospace; }
-html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+<title>index</title><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
 body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
 iframe { margin: auto; }
 a.url { word-break: break-all; }
@@ -25,14 +25,14 @@ body.typora-export { padding-left: 30px; padding-right: 30px; }
 }
 #write li > figure:last-child { margin-bottom: 0.5rem; }
 #write ol, #write ul { position: relative; }
-img { max-width: 100%; vertical-align: middle; }
-button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; line-height: inherit; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
 input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
 *, ::after, ::before { box-sizing: border-box; }
 #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
 #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
 p { line-height: inherit; }
-h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
 p { orphans: 4; }
 h1 { font-size: 2rem; }
 h2 { font-size: 1.8rem; }
@@ -44,11 +44,11 @@ h6 { font-size: 1rem; }
 .hidden { display: none; }
 .md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
 a { cursor: pointer; }
-sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.701961); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
 sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
 #write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
 figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
-figure > table { margin: 0px !important; }
+figure > table { margin: 0px; }
 tr { break-inside: avoid; break-after: auto; }
 thead { display: table-header-group; }
 table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
@@ -83,26 +83,24 @@ blockquote > :first-child, li > :first-child { margin-top: 0px; }
 .footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
 #write .footnote-line { white-space: pre-wrap; }
 @media print { 
-  body, html { border: 1px solid transparent; height: 99%; break-after: avoid-page; break-before: avoid-page; }
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
   #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
   .typora-export * { -webkit-print-color-adjust: exact; }
   html.blink-to-pdf { font-size: 13px; }
-<<<<<<< HEAD
   .typora-export #write { break-after: avoid; }
-=======
-  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid-page; }
->>>>>>> 23a15f214357bb5b30d533cc335b2ec6a61f668d
   .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
 }
 .footnote-line { margin-top: 0.714em; font-size: 0.7em; }
 a img, img a { cursor: pointer; }
 pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
 p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
 p > .md-image:only-child { display: inline-block; width: 100%; }
 #write .MathJax_Display { margin: 0.8em 0px 0px; }
 .md-math-block { width: 100%; }
 .md-math-block:not(:empty)::after { display: none; }
-[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
 .md-task-list-item { position: relative; list-style-type: none; }
 .task-list-item.md-task-list-item { padding-left: 0px; }
 .md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
@@ -129,7 +127,7 @@ p > .md-image:only-child { display: inline-block; width: 100%; }
 a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
 .footnote-line a:not(.reversefootnote) { color: inherit; }
 .md-attr { display: none; }
-.md-fn-count::after { content: '.'; }
+.md-fn-count::after { content: "."; }
 code, pre, samp, tt { font-family: var(--monospace); }
 kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
 .md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
@@ -144,15 +142,14 @@ a.md-print-anchor { white-space: pre !important; border: none !important; displa
 .MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
 .MathJax_SVG * { transition: none; }
 .MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
-.os-windows.monocolor-emoji .md-emoji { font-family: 'Segoe UI Symbol', sans-serif; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
 .md-diagram-panel > svg { max-width: 100%; }
-[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; height: auto; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
 [lang="mermaid"] .node text { font-size: 1rem; }
 table tr th { border-bottom-width: 0px; }
 video { max-width: 100%; display: block; margin: 0px auto; }
 iframe { max-width: 100%; width: 100%; border: none; }
 .highlight td, .highlight tr { border: 0px; }
-<<<<<<< HEAD
 svg[id^="mermaidChart"] { line-height: 1em; }
 mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
 .md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
@@ -160,228 +157,284 @@ mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
 @media print { 
   .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
 }
-=======
->>>>>>> 23a15f214357bb5b30d533cc335b2ec6a61f668d
 
 
 /* Flowchart variables */
 /* Sequence Diagram variables */
 /* Gantt chart variables */
-.mermaid .label {
-  color: #323D47;
-}
+/* state colors */
+.label {
+  
+  color: #333; }
 
-g.label {
-    color: #333;
-}
+.label text {
+  fill: #333; }
 
 .node rect,
 .node circle,
 .node ellipse,
 .node polygon {
   fill: #BDD5EA;
-  stroke: #81B1DB;
-  stroke-width: 1px;
-}
+  stroke: #9370DB;
+  stroke-width: 1px; }
+
+.node .label {
+  text-align: center; }
+
+.node.clickable {
+  cursor: pointer; }
+
+.arrowheadPath {
+  fill: lightgrey; }
+
 .edgePath .path {
   stroke: lightgrey;
-}
+  stroke-width: 1.5px; }
+
 .edgeLabel {
   background-color: #e8e8e8;
-}
+  text-align: center; }
+
 .cluster rect {
-  fill: #6D6D65 !important;
-  rx: 4 !important;
-  stroke: rgba(255, 255, 255, 0.25) !important;
-  stroke-width: 1px !important;
-}
+  fill: #6D6D65;
+  stroke: rgba(255, 255, 255, 0.25);
+  stroke-width: 1px; }
+
 .cluster text {
-  fill: #F9FFFE;
-}
+  fill: #F9FFFE; }
+
+div.mermaidTooltip {
+  position: absolute;
+  text-align: center;
+  max-width: 200px;
+  padding: 2px;
+  
+  font-size: 12px;
+  background: #6D6D65;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 2px;
+  pointer-events: none;
+  z-index: 100; }
+
 .actor {
   stroke: #81B1DB;
-  fill: #BDD5EA;
-}
+  fill: #BDD5EA; }
+
 text.actor {
   fill: black;
-  stroke: none;
-}
+  stroke: none; }
+
 .actor-line {
-  stroke: lightgrey;
-}
+  stroke: lightgrey; }
+
 .messageLine0 {
   stroke-width: 1.5;
-  stroke-dasharray: "2 2";
-  marker-end: "url(file:///Users/mini/Library/Application%20Support/abnerworks.Typora/themes/night/#arrowhead)";
-  stroke: lightgrey;
-}
+  stroke-dasharray: '2 2';
+  stroke: lightgrey; }
+
 .messageLine1 {
   stroke-width: 1.5;
-  stroke-dasharray: "2 2";
-  stroke: lightgrey;
-}
+  stroke-dasharray: '2 2';
+  stroke: lightgrey; }
+
 #arrowhead {
-  fill: lightgrey !important;
-}
+  fill: lightgrey; }
+
+.sequenceNumber {
+  fill: white; }
+
+#sequencenumber {
+  fill: lightgrey; }
+
 #crosshead path {
   fill: lightgrey !important;
-  stroke: lightgrey !important;
-}
+  stroke: lightgrey !important; }
+
 .messageText {
   fill: lightgrey;
-  stroke: none;
-}
+  stroke: none; }
+
 .labelBox {
   stroke: #81B1DB;
-  fill: #BDD5EA;
-}
+  fill: #BDD5EA; }
+
 .labelText {
   fill: #323D47;
-  stroke: none;
-}
+  stroke: none; }
+
 .loopText {
   fill: lightgrey;
-  stroke: none;
-}
-text>tspan {
-  fill: inherit;
-}
+  stroke: none; }
+
 .loopLine {
   stroke-width: 2;
-  stroke-dasharray: "2 2";
-  marker-end: "url(file:///Users/mini/Library/Application%20Support/abnerworks.Typora/themes/night/#arrowhead)";
-  stroke: #81B1DB;
-}
+  stroke-dasharray: '2 2';
+  stroke: #81B1DB; }
+
 .note {
   stroke: rgba(255, 255, 255, 0.25);
-  fill: #fff5ad;
-}
+  fill: #fff5ad; }
+
 .noteText {
   fill: black;
   stroke: none;
-  font-family: 'trebuchet ms', verdana, arial;
-  font-size: 14px;
-}
+  
+  font-size: 14px; }
+
+.activation0 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+.activation1 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+.activation2 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
 /** Section styling */
 .section {
   stroke: none;
-  opacity: 0.2;
-}
+  opacity: 0.2; }
+
 .section0 {
-  fill: rgba(255, 255, 255, 0.3);
-}
+  fill: rgba(255, 255, 255, 0.3); }
+
 .section2 {
-  fill: #EAE8B9;
-}
+  fill: #EAE8B9; }
+
 .section1,
 .section3 {
   fill: white;
-  opacity: 0.2;
-}
+  opacity: 0.2; }
+
 .sectionTitle0 {
-  fill: #F9FFFE;
-}
+  fill: #F9FFFE; }
+
 .sectionTitle1 {
-  fill: #F9FFFE;
-}
+  fill: #F9FFFE; }
+
 .sectionTitle2 {
-  fill: #F9FFFE;
-}
+  fill: #F9FFFE; }
+
 .sectionTitle3 {
-  fill: #F9FFFE;
-}
+  fill: #F9FFFE; }
+
 .sectionTitle {
   text-anchor: start;
   font-size: 11px;
   text-height: 14px;
-}
+   }
+
 /* Grid and axis */
 .grid .tick {
-  stroke: rgba(255, 255, 255, 0.3);
+  stroke: lightgrey;
   opacity: 0.3;
-  shape-rendering: crispEdges;
-}
-.grid .tick text {
-  fill: lightgrey;
-  opacity: 0.5;
-}
+  shape-rendering: crispEdges; }
+
 .grid path {
-  stroke-width: 0;
-}
+  stroke-width: 0; }
+
 /* Today line */
 .today {
   fill: none;
   stroke: #DB5757;
-  stroke-width: 2px;
-}
+  stroke-width: 2px; }
+
 /* Task styling */
 /* Default task */
 .task {
-  stroke-width: 1;
-}
+  stroke-width: 2; }
+
 .taskText {
   text-anchor: middle;
-  font-size: 11px;
-}
+   }
+
+.taskText:not([font-size]) {
+  font-size: 11px; }
+
 .taskTextOutsideRight {
   fill: #323D47;
   text-anchor: start;
   font-size: 11px;
-}
+   }
+
 .taskTextOutsideLeft {
   fill: #323D47;
   text-anchor: end;
-  font-size: 11px;
-}
+  font-size: 11px; }
+
+/* Special case clickable */
+.task.clickable {
+  cursor: pointer; }
+
+.taskText.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold; }
+
+.taskTextOutsideLeft.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold; }
+
+.taskTextOutsideRight.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold; }
+
 /* Specific task settings for the sections*/
 .taskText0,
 .taskText1,
 .taskText2,
 .taskText3 {
-  fill: #323D47;
-}
+  fill: #323D47; }
+
 .task0,
 .task1,
 .task2,
 .task3 {
   fill: #BDD5EA;
-  stroke: rgba(255, 255, 255, 0.5);
-}
+  stroke: rgba(255, 255, 255, 0.5); }
+
 .taskTextOutside0,
 .taskTextOutside2 {
-  fill: lightgrey;
-}
+  fill: lightgrey; }
+
 .taskTextOutside1,
 .taskTextOutside3 {
-  fill: lightgrey;
-}
+  fill: lightgrey; }
+
 /* Active task */
 .active0,
 .active1,
 .active2,
 .active3 {
   fill: #81B1DB;
-  stroke: rgba(255, 255, 255, 0.5);
-}
+  stroke: rgba(255, 255, 255, 0.5); }
+
 .activeText0,
 .activeText1,
 .activeText2,
 .activeText3 {
-  fill: #323D47 !important;
-}
+  fill: #323D47 !important; }
+
 /* Completed task */
 .done0,
 .done1,
 .done2,
 .done3 {
+  stroke: grey;
   fill: lightgrey;
-}
+  stroke-width: 2; }
+
 .doneText0,
 .doneText1,
 .doneText2,
 .doneText3 {
-  fill: #323D47 !important;
-}
+  fill: #323D47 !important; }
+
 /* Tasks on the critical line */
 .crit0,
 .crit1,
@@ -389,66 +442,252 @@ text>tspan {
 .crit3 {
   stroke: #E83737;
   fill: #E83737;
-  stroke-width: 2;
-}
+  stroke-width: 2; }
+
 .activeCrit0,
 .activeCrit1,
 .activeCrit2,
 .activeCrit3 {
   stroke: #E83737;
   fill: #81B1DB;
-  stroke-width: 2;
-}
+  stroke-width: 2; }
+
 .doneCrit0,
 .doneCrit1,
 .doneCrit2,
 .doneCrit3 {
   stroke: #E83737;
   fill: lightgrey;
-  stroke-width: 1;
+  stroke-width: 2;
   cursor: pointer;
-  shape-rendering: crispEdges;
-}
+  shape-rendering: crispEdges; }
+
+.milestone {
+  transform: rotate(45deg) scale(0.8, 0.8); }
+
+.milestoneText {
+  font-style: italic; }
+
 .doneCritText0,
 .doneCritText1,
 .doneCritText2,
 .doneCritText3 {
-  fill: lightgrey !important;
-}
+  fill: #323D47 !important; }
+
 .activeCritText0,
 .activeCritText1,
 .activeCritText2,
 .activeCritText3 {
-  fill: #323D47 !important;
-}
+  fill: #323D47 !important; }
+
 .titleText {
   text-anchor: middle;
   font-size: 18px;
+  fill: #323D47;
+   }
+
+g.classGroup text {
+  fill: #9370DB;
+  stroke: none;
+  
+  font-size: 10px; }
+  g.classGroup text .title {
+    font-weight: bolder; }
+
+g.classGroup rect {
+  fill: #BDD5EA;
+  stroke: #9370DB; }
+
+g.classGroup line {
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+.classLabel .box {
+  stroke: none;
+  stroke-width: 0;
+  fill: #BDD5EA;
+  opacity: 0.5; }
+
+.classLabel .label {
+  fill: #9370DB;
+  font-size: 10px; }
+
+.relation {
+  stroke: #9370DB;
+  stroke-width: 1;
+  fill: none; }
+
+#compositionStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#compositionEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#aggregationStart {
+  fill: #BDD5EA;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#aggregationEnd {
+  fill: #BDD5EA;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#dependencyStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#dependencyEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#extensionStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#extensionEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+.commit-id,
+.commit-msg,
+.branch-label {
   fill: lightgrey;
-}
-/*
+  color: lightgrey;
+   }
 
-
-*/
-.node text {
-  font-family: 'trebuchet ms', verdana, arial;
-  font-size: 14px;
-}
-div.mermaidTooltip {
-  position: absolute;
-  text-align: center;
-  max-width: 200px;
-  padding: 2px;
-  font-family: 'trebuchet ms', verdana, arial;
-  font-size: 12px;
-  background: #6D6D65;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 2px;
-  pointer-events: none;
-  z-index: 100;
+.pieTitleText {
+  text-anchor: middle;
+  font-size: 25px;
+  fill: #eee;
 }
 
-@charset "UTF-8";
+g.stateGroup text {
+  stroke: none;
+  font-size: 10px;
+}
+
+g.stateGroup circle {
+  fill: white !important;
+  stroke: white !important;
+}
+
+g.stateGroup .state-title {
+  font-weight: bolder;
+  fill: black; }
+
+g.stateGroup rect {
+  fill: #ececff;
+  stroke: #9370DB; }
+
+g.stateGroup line {
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+.transition {
+  stroke: #9370DB;
+  stroke-width: 1;
+  fill: none; }
+
+.stateGroup .composit {
+  fill: #555;
+  border-bottom: 1px; }
+
+.state-note {
+  stroke: rgba(255, 255, 255, 0.25);
+  fill: #fff5ad; }
+  .state-note text {
+    fill: black;
+    stroke: none;
+    font-size: 10px; }
+
+.stateLabel .box {
+  stroke: none;
+  stroke-width: 0;
+  fill: #BDD5EA;
+  opacity: 0.5; }
+
+.stateLabel text {
+  fill: black;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.cluster-label {
+  color:black;
+}
+
+.statediagram-cluster rect {
+  fill: #BDD5EA;
+  stroke: #9370DB; 
+  stroke-width: 1px;
+}
+.statediagram-cluster rect.outer {
+  rx: 5px;
+  ry: 5px;
+}
+.statediagram-state .divider {
+  stroke: #9370DB; 
+}
+
+.statediagram-state .title-state {
+  rx: 5px;
+  ry: 5px;
+}
+.statediagram-cluster.statediagram-cluster .inner {
+  fill: white;
+}
+.statediagram-cluster.statediagram-cluster-alt .inner {
+  fill: #e0e0e0;
+}
+
+.statediagram-cluster .inner {
+  rx:0;
+  ry:0;
+}
+
+.statediagram-state rect.basic {
+  rx: 5px;
+  ry: 5px;
+}
+.statediagram-state rect.divider {
+  stroke-dasharray: 10,10;
+  fill: #efefef;
+}
+
+.note-edge {
+  stroke-dasharray: 5;
+}
+
+.statediagram-note rect {
+  stroke: var(--cluster-border);
+  fill: #fff5ad;
+  stroke-width: 1px;
+  rx: 0;
+  ry: 0;
+}
+
+.node circle.state-start {
+  fill: black;
+  stroke: black;
+}
+.node circle.state-end {
+  fill: black;
+  stroke: white;
+  stroke-width: 1.5
+}
+#statediagram-barbEnd {
+  fill: #9370DB; 
+}
+
 /* CSS Document */
 
 /** code highlight */
@@ -561,7 +800,7 @@ div.mermaidTooltip {
 .CodeMirror-gutters {
     border-right: none;
 }
-@charset "UTF-8";
+
 /* CSS Document */
 
 /** markdown source **/
@@ -625,6 +864,8 @@ div.mermaidTooltip {
     --primary-color: #6dc1e7;
 
     --rawblock-edit-panel-bd: #333;
+
+    --search-select-bg-color: #428bca;
 }
 
 html {
@@ -643,6 +884,19 @@ body {
 
 #write {
     max-width: 914px;
+}
+
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
 }
 
 html,
@@ -909,9 +1163,14 @@ code,
 kbd,
 tt,
 var {
-    background: rgba(0, 0, 0, 0.05);
     font-size: 0.875rem;
     font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+code,
+tt,
+var {
+    background: rgba(0, 0, 0, 0.05);
 }
 
 kbd {
@@ -1203,14 +1462,8 @@ h6.md-focus .md-attr,
     opacity: 1;
 }
 
-.md-inline-math g,
 .md-inline-math svg {
-    stroke: #b8bfc6 !important;
-    fill: #b8bfc6 !important;
-}
-
-[md-inline='inline_math'] {
-    color: #9CB2E9;
+    color: #b8bfc6;
 }
 
 #math-inline-preview .md-arrow:after {
@@ -1232,7 +1485,6 @@ h6.md-focus .md-attr,
 }
 
 .modal-content .input-group-addon {
-    background-color: rgba(0, 0, 0, 0.17);
     color: white;
 }
 
@@ -1516,7 +1768,6 @@ footer.ty-footer {
     border-color: #656565;
 }
 
-<<<<<<< HEAD
 .ty-preferences .btn-default {
     background: transparent;
 }
@@ -1596,13 +1847,6 @@ footer.ty-footer {
 </style>
 </head>
 <body class='typora-export'>
-<div id='write'  class=''><h1><a name="coding花园" class="md-header-anchor"></a><span>coding花园</span></h1><h2><a name="笔记" class="md-header-anchor"></a><span>笔记</span></h2><ul><li><p><a href='https://liudandandear.gitee.io/post/CentOS部署nginx负载均衡.html'><span>CentOS部署nginx负载均衡</span></a></p></li><li><p><a href='https://liudandandear.gitee.io/post/Git强制推送代码到远程.html'><span>Git强制推送代码到远程</span></a></p></li><li><p><a href='https://liudandandear.gitee.io/post/Git强制拉取覆盖本地.html'><span>Git强制拉取覆盖本地</span></a></p></li><li><p><a href='https://liudandandear.gitee.io/post/使用Swoole的Websocket监听用户连接状态.html'><span>使用Swoole的Websocket监听用户连接状态</span></a></p></li><li><p><a href='https://liudandandear.gitee.io/post/在Mac上使用Homebrew升级到PHP7.4.html'><span>在Mac上使用Homebrew升级到PHP7.4</span></a></p></li><li><p><a href='https://liudandandear.gitee.io/post/php打印格式化显示利器.html'><span>php打印格式化显示利器</span></a></p></li><li><p><a href='https://liudandandear.gitee.io/post/vim相关命令.html'><span>vim相关命令</span></a></p></li><li><p><a href='https://liudandandear.gitee.io/post/升级ruby版本.html'><span>升级ruby版本</span></a></p></li><li><p><a href='https://liudandandear.gitee.io/post/安装SSDB.html'><span>安装SSDB</span></a></p></li><li><p><a href='https://liudandandear.gitee.io/post/redis设置密码.html'><span>redis设置密码</span></a></p><p>&nbsp;</p></li></ul><h2><a name="学习" class="md-header-anchor"></a><span>学习</span></h2><h3><a name="php" class="md-header-anchor"></a><span>PHP</span></h3><ul><li><a href='https://liudandandear.gitee.io/post/Laravel中的依赖注入和IoC实现.html'><span>Laravel中的依赖注入和IoC实现</span></a></li><li><a href='https://liudandandear.gitee.io/post/PHP控制反转(IOC)和依赖注入(DI).html'><span>PHP控制反转(IOC)和依赖注入(DI)</span></a></li><li><a href='https://liudandandear.gitee.io/post/PHP-FPM是什么.html'><span>PHP-FPM是什么</span></a></li><li><a href='https://liudandandear.gitee.io/post/php-fpm的三种运行模式.html'><span>php-fpm的三种运行模式</span></a></li><li><a href='https://liudandandear.gitee.io/post/nginx和php-fpm调用方式.html'><span>nginx和php-fpm调用方式</span></a></li><li><a href='https://liudandandear.gitee.io/post/php字符串函数.html'><span>php字符串函数</span></a></li></ul><h3><a name="nginx" class="md-header-anchor"></a><span>Nginx</span></h3><ul><li><a href='https://liudandandear.gitee.io/post/nginx相关命令.html'><span>nginx相关命令</span></a></li><li><a href='https://liudandandear.gitee.io/post/nginx和php-fpm调用方式.html'><span>nginx和php-fpm调用方式</span></a></li><li><a href='https://liudandandear.gitee.io/post/docker相关命令.html'><span>docker相关命令</span></a></li></ul><h3><a name="db" class="md-header-anchor"></a><span>DB</span></h3><ul><li><a href='https://liudandandear.gitee.io/post/了解Memcache.html'><span>了解Memcache</span></a></li><li><a href='https://liudandandear.gitee.io/post/了解Redis.html'><span>了解Redis</span></a></li><li><a href='https://liudandandear.gitee.io/post/redis数据类型比较和使用场景.html'><span>redis数据类型比较和使用场景</span></a></li><li><a href='https://liudandandear.gitee.io/post/mysql索引类型.html'><span>mysql索引类型</span></a></li><li><a href='https://liudandandear.gitee.io/post/MyISAM和InnoDB的区别.html'><span>MyISAM和InnoDB的区别</span></a></li><li><a href='https://liudandandear.gitee.io/post/mysql存储优化.html'><span>mysql存储优化</span></a></li><li><a href='https://liudandandear.gitee.io/post/mysql索引失效情况.html'><span>mysql索引失效情况</span></a></li></ul><h3><a name="http" class="md-header-anchor"></a><span>HTTP</span></h3><ul><li><a href='https://liudandandear.gitee.io/post/Linux一切皆文件.html'><span>Linux一切皆文件</span></a></li><li><a href='https://liudandandear.gitee.io/post/Get与Post的区别.html'><span>Get与Post的区别</span></a></li><li><a href='https://liudandandear.gitee.io/post/如何实现session跨服务器共享.html'><span>如何实现session跨服务器共享</span></a></li><li><a href='https://liudandandear.gitee.io/post/七大缓存经典问题.html'><span>七大缓存经典问题</span></a></li></ul><h3><a name="other" class="md-header-anchor"></a><span>OTHER</span></h3><ul><li><a href='https://liudandandear.gitee.io/post/什么是CICD.html'><span>什么是CICD</span></a></li><li><a href='https://liudandandear.gitee.io/post/冒泡排序解析.html'><span>冒泡排序解析</span></a></li><li><a href='https://liudandandear.gitee.io/post/快速排序解析.html'><span>快速排序解析</span></a></li><li><a href='https://liudandandear.gitee.io/post/rabbitmq和redis用作消息队列的区别.html'><span>rabbitmq和redis用作消息队列的区别</span></a></li></ul><p>&nbsp;</p></div>
-=======
- .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
-</style>
-</head>
-<body class='typora-export' >
-<div  id='write'  class = 'is-mac'><h1><a name="%E7%9B%AE%E5%BD%95" class="md-header-anchor"></a><span>目录</span></h1><h2><a name="%E7%AC%94%E8%AE%B0" class="md-header-anchor"></a><span>笔记</span></h2><ul><li><p><a href='https://liudandandear.gitee.io/post/CentOS%E9%83%A8%E7%BD%B2nginx%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1.html'><span>CentOS部署nginx负载均衡</span></a></p></li><li><p><a href='https://liudandandear.gitee.io/post/Git%E5%BC%BA%E5%88%B6%E6%8E%A8%E9%80%81%E4%BB%A3%E7%A0%81%E5%88%B0%E8%BF%9C%E7%A8%8B.html'><span>Git强制推送代码到远程</span></a></p></li><li><p><a href='https://liudandandear.gitee.io/post/Git%E5%BC%BA%E5%88%B6%E6%8B%89%E5%8F%96%E8%A6%86%E7%9B%96%E6%9C%AC%E5%9C%B0.html'><span>Git强制拉取覆盖本地</span></a></p></li><li><p><a href='https://liudandandear.gitee.io/post/%E4%BD%BF%E7%94%A8Swoole%E7%9A%84Websocket%E7%9B%91%E5%90%AC%E7%94%A8%E6%88%B7%E8%BF%9E%E6%8E%A5%E7%8A%B6%E6%80%81.html'><span>使用Swoole的Websocket监听用户连接状态</span></a></p></li><li><p><a href='https://liudandandear.gitee.io/post/%E5%9C%A8Mac%E4%B8%8A%E4%BD%BF%E7%94%A8Homebrew%E5%8D%87%E7%BA%A7%E5%88%B0PHP7.4.html'><span>在Mac上使用Homebrew升级到PHP7.4</span></a></p></li><li><p><a href='https://liudandandear.gitee.io/post/php%E6%89%93%E5%8D%B0%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%98%BE%E7%A4%BA%E5%88%A9%E5%99%A8.html'><span>php打印格式化显示利器</span></a></p></li><li><p><a href='https://liudandandear.gitee.io/post/vim%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4.html'><span>vim相关命令</span></a></p></li><li><p><a href='https://liudandandear.gitee.io/post/%E5%8D%87%E7%BA%A7ruby%E7%89%88%E6%9C%AC.html'><span>升级ruby版本</span></a></p></li><li><p><a href='https://liudandandear.gitee.io/post/%E5%AE%89%E8%A3%85SSDB.html'><span>安装SSDB</span></a></p></li><li><p><a href='https://liudandandear.gitee.io/post/redis%E8%AE%BE%E7%BD%AE%E5%AF%86%E7%A0%81.html'><span>redis设置密码</span></a></p><p>&nbsp;</p></li></ul><h2><a name="%E5%AD%A6%E4%B9%A0" class="md-header-anchor"></a><span>学习</span></h2><h3><a name="php" class="md-header-anchor"></a><span>PHP</span></h3><ul><li><a href='https://liudandandear.gitee.io/post/Laravel%E4%B8%AD%E7%9A%84%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5%E5%92%8CIoC%E5%AE%9E%E7%8E%B0.html'><span>Laravel中的依赖注入和IoC实现</span></a></li><li><a href='https://liudandandear.gitee.io/post/PHP%E6%8E%A7%E5%88%B6%E5%8F%8D%E8%BD%AC(IOC)%E5%92%8C%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5(DI).html'><span>PHP控制反转(IOC)和依赖注入(DI)</span></a></li><li><a href='https://liudandandear.gitee.io/post/PHP-FPM%E6%98%AF%E4%BB%80%E4%B9%88.html'><span>PHP-FPM是什么</span></a></li><li><a href='https://liudandandear.gitee.io/post/php-fpm%E7%9A%84%E4%B8%89%E7%A7%8D%E8%BF%90%E8%A1%8C%E6%A8%A1%E5%BC%8F.html'><span>php-fpm的三种运行模式</span></a></li><li><a href='https://liudandandear.gitee.io/post/nginx%E5%92%8Cphp-fpm%E8%B0%83%E7%94%A8%E6%96%B9%E5%BC%8F.html'><span>nginx和php-fpm调用方式</span></a></li><li><a href='https://liudandandear.gitee.io/post/php%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%87%BD%E6%95%B0.html'><span>php字符串函数</span></a></li></ul><h3><a name="nginx" class="md-header-anchor"></a><span>Nginx</span></h3><ul><li><a href='https://liudandandear.gitee.io/post/nginx%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4.html'><span>nginx相关命令</span></a></li><li><a href='https://liudandandear.gitee.io/post/nginx%E5%92%8Cphp-fpm%E8%B0%83%E7%94%A8%E6%96%B9%E5%BC%8F.html'><span>nginx和php-fpm调用方式</span></a></li><li><a href='https://liudandandear.gitee.io/post/docker%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4.html'><span>docker相关命令</span></a></li></ul><h3><a name="db" class="md-header-anchor"></a><span>DB</span></h3><ul><li><a href='https://liudandandear.gitee.io/post/%E4%BA%86%E8%A7%A3Memcache.html'><span>了解Memcache</span></a></li><li><a href='https://liudandandear.gitee.io/post/%E4%BA%86%E8%A7%A3Redis.html'><span>了解Redis</span></a></li><li><a href='https://liudandandear.gitee.io/post/redis%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E6%AF%94%E8%BE%83%E5%92%8C%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF.html'><span>redis数据类型比较和使用场景</span></a></li><li><a href='https://liudandandear.gitee.io/post/mysql%E7%B4%A2%E5%BC%95%E7%B1%BB%E5%9E%8B.html'><span>mysql索引类型</span></a></li><li><a href='https://liudandandear.gitee.io/post/MyISAM%E5%92%8CInnoDB%E7%9A%84%E5%8C%BA%E5%88%AB.html'><span>MyISAM和InnoDB的区别</span></a></li><li><a href='https://liudandandear.gitee.io/post/mysql%E5%AD%98%E5%82%A8%E4%BC%98%E5%8C%96.html'><span>mysql存储优化</span></a></li><li><a href='https://liudandandear.gitee.io/post/mysql%E7%B4%A2%E5%BC%95%E5%A4%B1%E6%95%88%E6%83%85%E5%86%B5.html'><span>mysql索引失效情况</span></a></li><li><a href='https://liudandandear.gitee.io/post/varchar%E5%92%8Cchar%E7%9A%84%E5%8C%BA%E5%88%AB.html'><span>varchar和char的区别</span></a></li></ul><h3><a name="http" class="md-header-anchor"></a><span>HTTP</span></h3><ul><li><a href='https://liudandandear.gitee.io/post/Linux%E4%B8%80%E5%88%87%E7%9A%86%E6%96%87%E4%BB%B6.html'><span>Linux一切皆文件</span></a></li><li><a href='https://liudandandear.gitee.io/post/Get%E4%B8%8EPost%E7%9A%84%E5%8C%BA%E5%88%AB.html'><span>Get与Post的区别</span></a></li><li><a href='https://liudandandear.gitee.io/post/%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0session%E8%B7%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%85%B1%E4%BA%AB.html'><span>如何实现session跨服务器共享</span></a></li><li><a href='https://liudandandear.gitee.io/post/%E4%B8%83%E5%A4%A7%E7%BC%93%E5%AD%98%E7%BB%8F%E5%85%B8%E9%97%AE%E9%A2%98.html'><span>七大缓存经典问题</span></a></li><li><a href='https://liudandandear.gitee.io/post/http%E7%8A%B6%E6%80%81%E7%A0%81%E5%90%AB%E4%B9%89.html'><span>http状态码含义</span></a></li></ul><h3><a name="other" class="md-header-anchor"></a><span>OTHER</span></h3><ul><li><a href='https://liudandandear.gitee.io/post/%E4%BB%80%E4%B9%88%E6%98%AFCICD.html'><span>什么是CICD</span></a></li><li><a href='https://liudandandear.gitee.io/post/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F%E8%A7%A3%E6%9E%90.html'><span>冒泡排序解析</span></a></li><li><a href='https://liudandandear.gitee.io/post/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F%E8%A7%A3%E6%9E%90.html'><span>快速排序解析</span></a></li><li><a href='https://liudandandear.gitee.io/post/rabbitmq%E5%92%8Credis%E7%94%A8%E4%BD%9C%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E7%9A%84%E5%8C%BA%E5%88%AB.html'><span>rabbitmq和redis用作消息队列的区别</span></a></li></ul><p>&nbsp;</p></div>
->>>>>>> 23a15f214357bb5b30d533cc335b2ec6a61f668d
+<div id='write'  class=''><h1><a name="coding花园" class="md-header-anchor"></a><span>Coding花园</span></h1><p><strong><a href='https://liudandandear.gitee.io'><span>笔记</span></a></strong><span>      </span><strong><a href='https://liudandandear.gitee.io/php.html'><span>PHP</span></a></strong><span>      </span><strong><a href='https://liudandandear.gitee.io/java.html'><span>Java</span></a></strong><span>      </span><strong><a href='https://liudandandear.gitee.io/nginx.html'><span>Nginx</span></a></strong><span>      </span><strong><a href='https://liudandandear.gitee.io/db.html'><span>DB</span></a></strong><span>      </span><strong><a href='https://liudandandear.gitee.io/http.html'><span>Http</span></a></strong><span>      </span><strong><a href='https://liudandandear.gitee.io/other.html'><span>Other</span></a></strong><span>      </span><strong><a href='https://liudandandear.gitee.io/about.html'><span>关于我</span></a></strong><span>       </span></p><hr /><h2><a name="笔记" class="md-header-anchor"></a><span>笔记</span></h2><ul><li><a href='https://liudandandear.gitee.io/post/Mac安装composer'><span>Mac安装composer</span></a></li><li><a href='https://liudandandear.gitee.io/post/macOS Big Sur更新后git失效的解决方法.html'><span>macOS Big Sur更新后git失效的解决方法</span></a></li><li><a href='https://liudandandear.gitee.io/post/CentOS部署nginx负载均衡.html'><span>CentOS部署nginx负载均衡</span></a></li><li><a href='https://liudandandear.gitee.io/post/Git强制推送代码到远程.html'><span>Git强制推送代码到远程</span></a></li><li><a href='https://liudandandear.gitee.io/post/Git强制拉取覆盖本地.html'><span>Git强制拉取覆盖本地</span></a></li><li><a href='https://liudandandear.gitee.io/post/使用Swoole的Websocket监听用户连接状态.html'><span>使用Swoole的Websocket监听用户连接状态</span></a></li><li><a href='https://liudandandear.gitee.io/post/在Mac上使用Homebrew升级到PHP7.4.html'><span>在Mac上使用Homebrew升级到PHP7.4</span></a></li><li><a href='https://liudandandear.gitee.io/post/php打印格式化显示利器.html'><span>php打印格式化显示利器</span></a></li><li><a href='https://liudandandear.gitee.io/post/vim相关命令.html'><span>vim相关命令</span></a></li><li><a href='https://liudandandear.gitee.io/post/升级ruby版本.html'><span>升级ruby版本</span></a></li></ul><p>&nbsp;</p><h3><a name="日常归类" class="md-header-anchor"></a><span>日常归类</span></h3><h4><a name="线上问题定位思路" class="md-header-anchor"></a><span>线上问题定位思路</span></h4><ul><li><span>线上问题排查-服务器篇</span></li><li><span>线上问题排查-nginx篇</span></li><li><a href='(https://liudandandear.gitee.io/post/线上问题排查-mysql篇.html)'><span>线上问题排查-mysql篇</span></a></li><li><span>线上问题排查-redis篇</span></li><li><span>线上问题排查-网络篇</span></li><li><span>线上问题排查-业务异常篇</span></li></ul><p>&nbsp;</p></div>
 </body>
 </html>

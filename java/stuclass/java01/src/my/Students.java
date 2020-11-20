@@ -2,18 +2,17 @@ package my;
 
 /**
  * Student 类
- * 
- * @author mini
  *
+ * @author mini
  */
 public class Students {
 
-	// 类student的name属性
-	public String name;
+    // 类student的name属性
+    public String name;
 
-	// age属性
-	public int age;
+    // age属性
+    public int age;
 
-	// sex属性
-	public boolean sex;
+    // sex属性
+    public boolean sex;
 }
