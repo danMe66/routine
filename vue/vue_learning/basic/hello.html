@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>数据绑定演示</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" v-model="name" placeholder="你的名字">
+        <p>你好呀，{{ name }}</p>
+    </div>
+    <script>
+        let data = {
+            name: "学院君"
+        }
+        new Vue({
+            el: '#app',
+            data: data
+        })
+    </script>
+</body>
+
+</html>
