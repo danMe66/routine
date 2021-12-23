@@ -66,3 +66,4 @@ xiaoming.hasOwnProperty('name'); // true
 xiaoming.hasOwnProperty('toString'); // false
 
 
+// 练习：https://www.liaoxuefeng.com/wiki/1022910821149312/1023020997017056

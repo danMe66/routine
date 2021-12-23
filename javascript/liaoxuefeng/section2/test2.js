@@ -112,3 +112,5 @@ arr.join('-'); // 'A-B-C-1-2-3'
 var arr = [[1, 2, 3], [400, 500, 600], '-'];
 //上述Array包含3个元素，其中头两个元素本身也是Array。
 console.log(arr);
+
+// 练习：https://www.liaoxuefeng.com/wiki/1022910821149312/1023020967732032

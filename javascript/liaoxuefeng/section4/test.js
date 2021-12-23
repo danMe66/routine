@@ -72,3 +72,4 @@ if (s.length) { // 条件计算结果为3
 }
 //JavaScript把null、undefined、0、NaN和空字符串''视为false，其他值一概视为true，因此上述代码条件判断的结果是true。
 
+// 练习：https://www.liaoxuefeng.com/wiki/1022910821149312/1023023817686336
