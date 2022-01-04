@@ -140,7 +140,7 @@ single; // true
 // 声明变量:
 var x, y;
 // 解构赋值:
-{ x, y } = { name: '小明', x: 100, y: 200 };
+// { x, y } = { name: '小明', x: 100, y: 200 };
 // 语法错误: Uncaught SyntaxError: Unexpected token =
 // 这是因为JavaScript引擎把{开头的语句当作了块处理，于是=不再合法。解决方法是用小括号括起来：
 ({ x, y } = { name: '小明', x: 100, y: 200 });
