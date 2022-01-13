@@ -78,7 +78,7 @@ f3(); // 9
     return x * x;
 })(3); // 9
 // 理论上讲，创建一个匿名函数并立刻执行可以这么写：
-function (x) { return x * x } (3);
+// function (x) { return x * x } (3);
 // 但是由于JavaScript语法解析的问题，会报SyntaxError错误，因此需要用括号把整个函数定义括起来：
 (function (x) { return x * x })(3);
 // 通常，一个立即执行的匿名函数可以把函数体拆开，一般这么写：
