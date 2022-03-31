@@ -1,40 +1,51 @@
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
 
-target/
-out
-*.log
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+### VS Code ###
+.vscode/
 
-.flattened-pom.xml
+# 忽略匹配下列规则的Git 提交 V2.1.0
+### gradle ###
+.gradle
+/build/
+!gradle/wrapper/gradle-wrapper.jar
 
 ### STS ###
+.settings/
 .apt_generated
 .classpath
 .factorypath
 .project
 .settings
 .springBeans
-.sts4-cache
+bin/
 
 ### IntelliJ IDEA ###
 .idea
-.idea/
 *.iws
 *.iml
 *.ipr
-.settings
-.project
+*.lock
+rebel.xml
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+### temp ignore ###
+*.cache
+*.diff
+*.patch
+*.tmp
+*.java~
+*.properties~
+*.xml~
 
-### VS Code ###
-.vscode/
+
+### system ignore ###
+.DS_Store
+Thumbs.db
+Servers
+.metadata
+upload
+gen_code
+

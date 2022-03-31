@@ -1,0 +1,14 @@
+server:
+  port: 8081
+
+#person:#  age: 18
+#  boss: true
+#  birth: 2017/12/12
+#  maps: {k1: v1,k2: v2}
+#  lists:#    - 12
+#    - 12
+#  dog: 
+#    name:小狗
+#    age:12
+#  last-name: zhang12
+#  
