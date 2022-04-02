@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.freedougall</groupId>
-    <artifactId>practice-springboot-demo</artifactId>
+    <artifactId>practice-distributed-grab-orders</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>practice-springboot-demo</name>
-    <description>Demo project for Spring Boot</description>
+    <name>springboot+redis分布式锁-模拟抢单</name>
+    <description>https://www.cnblogs.com/wangrudong003/p/10627539.html</description>
     <properties>
         <java.version>1.8</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
@@ -127,18 +127,10 @@
             <artifactId>junit</artifactId>
             <scope>test</scope>
         </dependency>
-        <!--集成redis-->
+
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
         </dependency>
     </dependencies>
 
