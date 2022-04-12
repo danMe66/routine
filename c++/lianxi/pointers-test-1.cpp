@@ -24,9 +24,12 @@ int main()
 
     cout << "变量a的指针为:" << &a << endl;
 
-    // 指针中地址的值
+    //声明指针变量
     int *address;
+
+    // 指针中地址的值
     address = &a;
+
     cout << "变量a的指针对应的值为:" << *address << endl;
     // *address也等于*&a
     cout << "变量a的指针对应的值为:" << *&a << endl;
