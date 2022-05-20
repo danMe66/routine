@@ -41,6 +41,11 @@ void main() {
   print('start');
   var result = fibonacci(200);
   print(result);
+
+  var voyager = Spacecraft("Voyager I", DateTime(1997, 8, 5));
+  voyager.describe();
+  var voyager3 = Spacecraft.unlaunched('Voyager III');
+  voyager3.describe();
 }
 
 // Class：类
@@ -52,5 +57,21 @@ class Spacecraft {
 
   Spacecraft(this.name, this.launchData) {}
 
-  // Spacecraft.unlaunched();
+  Spacecraft.unlaunched(String name) : this(name, null);
+
+  void describe() {
+    print('Spacecraft: $name');
+    var launchData = this.launchData;
+    if (launchData != null) {
+      int years = DateTime.now().difference(launchData).inDays ~/ 365;
+      print('Launched: $launchYear ($years years ago)');
+    } else {
+      print('Unlaunched');
+    }
+  }
+}
+
+// Enums:枚举
+Enum Planet {
+  
 }
