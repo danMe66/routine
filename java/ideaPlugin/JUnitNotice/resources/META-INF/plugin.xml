@@ -1,0 +1,38 @@
+<idea-plugin>
+  <!-- 插件唯一id，不能和其他插件项目重复，所以推荐使用com.xxx.xxx的格式
+         插件不同版本之间不能更改，若没有指定，则与插件名称相同 -->
+  <id>com.videobee.plugin.myplugin</id>
+
+  <!-- 插件名称，别人在官方插件库搜索你的插件时使用的名称 -->
+  <name>JUnitNotice</name>
+
+  <!-- 插件版本 -->
+  <version>1.0</version>
+
+  <!-- 供应商主页和email-->
+  <vendor email="1064265199@qq.com" url="">公司名称</vendor>
+
+  <!-- 插件的描述 -->
+  <description>单元测试通知插件，用于单元测试脚本执行完毕之后发送通知消息。</description>
+
+  <!-- 插件版本变更信息，支持HTML标签；
+       将展示在 settings | Plugins 对话框和插件仓库的Web页面 -->
+  <change-notes>Initial release of the plugin.</change-notes>
+
+  <!-- 插件兼容IDEA的最大和最小 build 号，两个属性可以任选一个或者同时使用
+       官网详细介绍：http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html-->
+  <idea-version since-build="173.0"/>
+
+  <!-- 插件所依赖的其他插件的id -->
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <!-- 声明该插件对IDEA core或其他插件的扩展 -->
+  <extensions defaultExtensionNs="com.intellij">
+    <configurationType implementation="com.videobee.runConfiguration.DemoRunConfigurationType"/>
+  </extensions>
+  <actions>
+  </actions>
+
+</idea-plugin>

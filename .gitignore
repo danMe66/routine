@@ -4,3 +4,4 @@
 /.vagrant
 /Servers/
 /.metadata/
+*.DS_Store
