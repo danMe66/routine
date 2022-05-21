@@ -21,11 +21,10 @@ void main() {
 }
 
 // Inheritance:继承
-class Orbiter extends Spacecraft {
-  double altitude;
-
-  Orbiter(super.name, DateTime super.launchDate, this.altitude);
-}
+// class Orbiter extends Spacecraft {
+//   double altitude;
+//   Orbiter(super.name, DateTime super.launchDate, this.altitude);
+// }
 
 // mixin:混合
 mixin Piloted {
@@ -36,30 +35,30 @@ mixin Piloted {
   }
 }
 
-class PilotedCraft extends Spacecraft with Piloted {
-  void print_astronauts() {
-    // with:，如下：↓
-    print('Number of astronauts:$astronauts');
-  }
-}
+// class PilotedCraft extends Spacecraft with Piloted {
+//   void print_astronauts() {
+//     // with:，如下：↓
+//     print('Number of astronauts:$astronauts');
+//   }
+// }
 
 // implements：必须重写所有属性和方法，且无法调用父类field
-class MockSpaceship implements Spacecraft {
-  @override
-  DateTime? launchData;
+// class MockSpaceship implements Spacecraft {
+//   @override
+//   DateTime? launchData;
 
-  @override
-  String name;
+//   @override
+//   String name;
 
-  @override
-  void describe() {
-    // TODO: implement describe
-  }
+//   @override
+//   void describe() {
+//     // TODO: implement describe
+//   }
 
-  @override
-  // TODO: implement launchYear
-  int? get launchYear => throw UnimplementedError();
-}
+//   @override
+//   // TODO: implement launchYear
+//   int? get launchYear => throw UnimplementedError();
+// }
 
 // 被abstract关键字修饰的抽象类
 // 抽象类可以被继承：
