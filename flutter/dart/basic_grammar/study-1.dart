@@ -70,8 +70,3 @@ class Spacecraft {
     }
   }
 }
-
-// Enums:枚举
-Enum Planet {
-  
-}
