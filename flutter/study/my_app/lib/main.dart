@@ -15,6 +15,10 @@ class MyAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Container小部件用来创建举行视觉元素，装饰BoxDecoration
+    // 例如背景、边框、阴影
+    // Container 还可以对其大小、边距、填充、约束
+    // Container 也可以使用矩阵在三维空间中进行变换
     return Container(
       height: 56.0,
       padding: const EdgeInsets.symmetric(horizontal: 8.0),
