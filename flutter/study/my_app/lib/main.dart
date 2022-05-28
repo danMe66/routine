@@ -1,12 +1,23 @@
 import 'package:flutter/material.dart';
 
 void main() {
+  // 1:Basic widgets：基础组件
   // runApp(const MyApp());
   ///runApp()函数接受给定Widiget，并且使其成为小部件树的根
+
+// 2:Using Material Components：Material组件构建
+  // runApp(const MaterialApp(
+  //   title: 'My App',
+  //   // home: SafeArea(child: MyScaffold()),
+  //   home: TutorialHome(),
+  // ));
+  // 3:处理手势
   runApp(const MaterialApp(
-    title: 'My App',
-    // home: SafeArea(child: MyScaffold()),
-    home: TutorialHome(),
+    home: Scaffold(
+      body: Center(
+        child: MyButton(),
+      ),
+    ),
   ));
 }
 
@@ -95,6 +106,31 @@ class TutorialHome extends StatelessWidget {
         onPressed: null,
         tooltip: 'Add',
         child: Icon(Icons.add),
+      ),
+    );
+  }
+}
+
+// 处理手势
+class MyButton extends StatelessWidget {
+  const MyButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: () {
+        print('点击了按钮');
+      },
+      child: Container(
+        height: 50.0,
+        padding: const EdgeInsets.all(8.0),
+        margin: const EdgeInsets.symmetric(horizontal: 8.0),
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(5.0),
+            color: Colors.lightGreen[500]),
+        child: const Center(
+          child: Text('Engage'),
+        ),
       ),
     );
   }
