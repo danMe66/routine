@@ -5,10 +5,12 @@ void main() {
   ///runApp()函数接受给定Widiget，并且使其成为小部件树的根
   runApp(const MaterialApp(
     title: 'My App',
-    home: SafeArea(child: MyScaffold()),
+    // home: SafeArea(child: MyScaffold()),
+    home: TutorialHome(),
   ));
 }
 
+// Basic widgets：基础组件
 class MyAppBar extends StatelessWidget {
   final Widget title;
   const MyAppBar({required this.title, super.key});
@@ -62,6 +64,37 @@ class MyScaffold extends StatelessWidget {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+// Using Material Components：Material组件构建
+class TutorialHome extends StatelessWidget {
+  const TutorialHome({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        leading: const IconButton(
+          onPressed: null,
+          icon: Icon(Icons.menu),
+        ),
+        title: const Text('菜单'),
+        actions: const [
+          IconButton(
+            onPressed: null,
+            icon: Icon(Icons.search),
+          ),
+        ],
+      ),
+      body: const Center(
+        child: Text('我是中间页面内容'),
+      ),
+      floatingActionButton: const FloatingActionButton(
+        onPressed: null,
+        tooltip: 'Add',
+        child: Icon(Icons.add),
       ),
     );
   }
