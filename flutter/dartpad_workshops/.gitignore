@@ -1,0 +1,12 @@
+.idea
+
+**/.dart_tool
+**/.packages
+**/build
+**/pubspec.lock
+
+**/lib
+**/test
+**/android
+**/ios
+**/web

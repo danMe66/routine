@@ -1,0 +1,9 @@
+name: dartpad template
+type: flutter
+steps:
+  - name: 第一步
+    directory: step_01
+    has_solution: false
+  - name: 第二步
+    directory: step_02
+    has_solution: true
